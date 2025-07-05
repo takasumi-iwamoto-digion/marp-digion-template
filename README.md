@@ -297,6 +297,62 @@ QuickChart.ioを使用して動的にグラフを生成できます：
 
 詳細は[QuickChart使用ガイド](docs/quickchart-usage.md)を参照してください。
 
+## Bootstrap統合
+
+本テーマはBootstrap 5.3.0と完全に統合されており、Bootstrapのコンポーネントを活用できます。
+
+### 有効化方法
+
+マークダウンのフロントマターで`html: true`を設定してください：
+
+```yaml
+---
+marp: true
+theme: digion
+html: true
+---
+```
+
+### 統合例
+
+#### アラートとバッジ
+![Bootstrap統合デモ - アラートとバッジ](examples/basic-presentation.023.png)
+
+Bootstrapのアラートコンポーネントとバッジを使用した情報表示の例です。
+
+#### テーブルスタイル
+![Bootstrap統合デモ - テーブル](examples/basic-presentation.024.png)
+
+Bootstrapのテーブルクラスを使用した、美しいデータ表示の例です。
+
+#### カードコンポーネント
+![Bootstrap統合デモ - カード](examples/basic-presentation.025.png)
+
+Bootstrapのカードコンポーネントを使用したコンテンツのグループ化の例です。
+
+### 使用方法
+
+```html
+<!-- アラート -->
+<div class="alert alert-success">成功メッセージ</div>
+
+<!-- バッジ -->
+<span class="badge bg-primary">新着</span>
+
+<!-- ボタン -->
+<button class="btn btn-primary">送信</button>
+
+<!-- カード -->
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">タイトル</h5>
+    <p class="card-text">内容</p>
+  </div>
+</div>
+```
+
+詳細な統合方法については [docs/css-framework-integration.md](docs/css-framework-integration.md) を参照してください。
+
 ## 生成例
 
 `basic-presentation.md`から生成されたスライドの例：
@@ -308,19 +364,19 @@ QuickChart.ioを使用して動的にグラフを生成できます：
 ![通常スライド](examples/basic-presentation.002.png)
 
 ### 見出しスライド（headline）
-![見出しスライド](examples/basic-presentation.009.png)
+![見出しスライド](examples/basic-presentation.010.png)
 
 ### 画像レイアウト（左側）
-![左画像レイアウト](examples/basic-presentation.010.png)
+![左画像レイアウト](examples/basic-presentation.012.png)
 
 ### コードブロック
-![コードブロック](examples/basic-presentation.013.png)
+![コードブロック](examples/basic-presentation.016.png)
 
 ### テーブル
-![テーブル](examples/basic-presentation.014.png)
+![テーブル](examples/basic-presentation.017.png)
 
 ### 最終スライド
-![最終スライド](examples/basic-presentation.015.png)
+![最終スライド](examples/basic-presentation.026.png)
 
 ## デザイン目標
 
