@@ -30,11 +30,14 @@ marp -s my-presentation.md
 # HTML
 marp my-presentation.md
 
-# PDF
-marp --pdf my-presentation.md
+# PDF（画像を含む場合）
+marp --allow-local-files --pdf my-presentation.md
+
+# PNG画像（画像を含む場合）
+marp --allow-local-files --images png my-presentation.md
 
 # PowerPoint
-marp --pptx my-presentation.md
+marp --allow-local-files --pptx my-presentation.md
 ```
 
 ## それだけです！

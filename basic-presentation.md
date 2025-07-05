@@ -1,12 +1,13 @@
 ---
 marp: true
-theme: ./marp-custom-fixed.css
+theme: mytheme
 transition: fade
 paginate: true
 ---
 
 <!-- _class: title -->
 <!-- _paginate: false -->
+
 
 # DigiOn プレゼンテーション
 シンプルな構成で使いやすいMarpテンプレート

@@ -154,6 +154,11 @@ CSSファイルを編集することで、以下の要素をカスタマイズ�
 ## 注意事項
 
 - ローカル版では画像ファイルは`images/`ディレクトリから参照されます
+- **画像を含むPDF/PNG出力時は `--allow-local-files` オプションが必要です**
+  ```bash
+  marp --allow-local-files --pdf basic-presentation.md
+  marp --allow-local-files --images png basic-presentation.md
+  ```
 - GitHub版を使用する場合は、インターネット接続が必要です
 - CONFIDENTIALマークが含まれているため、社外への公開時は注意してください
 
