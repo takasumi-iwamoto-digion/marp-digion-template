@@ -55,6 +55,7 @@ marp-digion-template/
 │   └── DigiOn-Template-last.png       # 最終スライド
 ├── examples/                    # 生成されたスライドの例
 │   ├── basic-presentation.001.png     # タイトルスライド
+│   ├── basic-presentation.002.png     # 通常スライド（特徴説明）
 │   ├── basic-presentation.009.png     # 見出しスライド
 │   ├── basic-presentation.010.png     # 左画像レイアウト
 │   ├── basic-presentation.013.png     # コードブロック
@@ -220,6 +221,9 @@ const digion = new DigiOnSDK({
 
 ### タイトルスライド
 ![タイトルスライド](examples/basic-presentation.001.png)
+
+### 通常スライド（特徴説明）
+![通常スライド](examples/basic-presentation.002.png)
 
 ### 見出しスライド（headline）
 ![見出しスライド](examples/basic-presentation.009.png)
