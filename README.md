@@ -13,7 +13,7 @@ DigiOn向けのMarpプレゼンテーション用カスタムテーマです。
 ```yaml
 ---
 marp: true
-theme: ./marp-custom-fixed.css
+theme: digion
 ---
 
 # プレゼンテーションタイトル
@@ -25,6 +25,8 @@ VS Code、Marp CLI、どちらでも同じパスで動作します。
 
 - **タイトルスライド**: DigiOnロゴとCONFIDENTIAL表記を含む
 - **通常スライド**: 赤いアクセントカラーを使用した見出し
+- **見出しスライド**: 大きなテキストを中央に配置した強調表示
+- **画像レイアウト**: 左右に画像を配置可能
 - **最終スライド**: 会社情報表示用のレイアウト
 - **フォント**: Noto Sans JPを使用した読みやすいデザイン
 
@@ -51,9 +53,7 @@ marp-digion-template/
 │   ├── DigiOn-Template-half-left.png  # 左画像配置
 │   ├── DigiOn-Template-half-right.png # 右画像配置
 │   └── DigiOn-Template-last.png       # 最終スライド
-├── .vscode/                     # VS Code設定
-│   └── settings.json
-├── .marprc.yml                  # Marp CLI設定ファイル
+├── QUICK_START.md               # クイックスタートガイド
 └── README.md                    # このファイル
 ```
 
@@ -68,9 +68,7 @@ marp-digion-template/
 
 ### 2. カスタムテーマの登録
 
-本リポジトリの`.vscode/settings.json`により、カスタムテーマは自動的に登録されます。
-
-手動で設定する場合は、VS Codeの設定（`Ctrl+,` または `Cmd+,`）を開き、以下を追加：
+VS Codeの設定（`Ctrl+,` または `Cmd+,`）を開き、以下を追加：
 
 ```json
 {
@@ -97,7 +95,7 @@ marp-digion-template/
 ```yaml
 ---
 marp: true
-theme: ./marp-custom-fixed.css
+theme: digion
 ---
 ```
 
@@ -111,12 +109,15 @@ style: |
 ---
 ```
 
+**注意**: GitHub経由版でも、テーマ名は内部的に`digion`として定義されています。
+
 ### 2. スライドクラスの使用
 
 #### タイトルスライド
 
 ```markdown
 <!-- _class: title -->
+<!-- _paginate: false -->
 
 # プレゼンテーションタイトル
 サブタイトル
@@ -137,10 +138,38 @@ style: |
 - 箇条書き項目3
 ```
 
+#### 見出しスライド（headline）
+
+```markdown
+<!-- _class: headline -->
+<!-- _paginate: false -->
+
+## 大見出し
+```
+
+#### 画像レイアウト
+
+左側に画像：
+```markdown
+![bg left:40%](./images/image3.jpg)
+
+## タイトル
+内容
+```
+
+右側に画像：
+```markdown
+![bg right:40%](./images/image3.jpg)
+
+## タイトル
+内容
+```
+
 #### 最終スライド
 
 ```markdown
 <!-- _class: end -->
+<!-- _paginate: false -->
 
 <div class="company-info">
   <div class="col1"></div>
@@ -152,6 +181,30 @@ style: |
 ```
 
 ※ 会社情報のテキストはすべてCSSで自動的に表示されます
+
+#### コードブロック
+
+通常のMarkdownのコードブロックがそのまま使用できます：
+
+````markdown
+```javascript
+const digion = new DigiOnSDK({
+  apiKey: 'your-api-key',
+  platform: 'web'
+});
+```
+````
+
+#### テーブル
+
+通常のMarkdownテーブルが装飾付きで表示されます：
+
+```markdown
+| 製品名 | 対応OS | 主な機能 |
+|--------|--------|----------|
+| DigiOn Video | Windows/Mac/Linux | 動画再生・編集 |
+| DigiOn Audio | iOS/Android | 音声処理・変換 |
+```
 
 ## デザイン目標
 
