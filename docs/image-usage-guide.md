@@ -57,7 +57,7 @@ background-image: url('./images/image1.png');
 画像ファイルの配置：
 ```
 marp-digion-template/
-├── marp-custom-fixed.css
+├── marp-theme-digion.css
 ├── images/
 │   ├── image1.png
 │   └── ...

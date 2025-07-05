@@ -85,7 +85,7 @@ marp --bespoke.progress slide.md
 
 ## 推奨される改善実装
 
-### 1. 修正版CSS（marp-custom-fixed.css）
+### 1. 修正版CSS（marp-theme-digion.css）
 
 ```css
 /* @theme digion */

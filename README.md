@@ -34,7 +34,7 @@ VS Code、Marp CLI、どちらでも同じパスで動作します。
 
 ```
 marp-digion-template/
-├── marp-custom-fixed.css        # カスタムテーマ（HD: 1280×720）
+├── marp-theme-digion.css        # カスタムテーマ（HD: 1280×720）
 ├── basic-presentation.md        # 基本的な使用例（高度なレイアウト例を含む）
 ├── images/                      # 画像ディレクトリ
 │   ├── image1.png              # DigiOnロゴ
@@ -82,7 +82,7 @@ VS Codeの設定（`Ctrl+,` または `Cmd+,`）を開き、以下を追加：
 ```json
 {
   "markdown.marp.themes": [
-    "./marp-custom-fixed.css"
+    "./marp-theme-digion.css"
   ],
   "markdown.marp.enableHtml": true
 }
@@ -114,7 +114,7 @@ theme: digion
 ---
 marp: true
 style: |
-  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/marp-custom-fixed.css');
+  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/marp-theme-digion.css');
 ---
 ```
 

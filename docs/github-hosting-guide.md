@@ -18,7 +18,7 @@ Marpのカスタムテーマと画像をGitHub経由で参照することで、�
 ---
 marp: true
 style: |
-  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css');
+  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/marp-theme-digion.css');
 ---
 ```
 
@@ -26,11 +26,11 @@ style: |
 
 ```bash
 # 単一ファイルの変換
-marp --theme https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css slide.md
+marp --theme https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/marp-theme-digion.css slide.md
 
 # テーマの登録
 marp --theme-set \
-  https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css \
+  https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/marp-theme-digion.css \
   slide.md
 ```
 
@@ -38,7 +38,7 @@ marp --theme-set \
 
 ```yaml
 themeSet:
-  - https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css
+  - https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/marp-theme-digion.css
 ```
 
 ### 方法4: package.jsonでの設定
@@ -47,7 +47,7 @@ themeSet:
 {
   "marp": {
     "themeSet": [
-      "https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css"
+      "https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/marp-theme-digion.css"
     ]
   }
 }
@@ -106,7 +106,7 @@ GitHubのCDNはファイルをキャッシュするため、更新が即座に�
 
 ```yaml
 # タグを使用した安定版の参照
-@import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/v1.0.0/assets/marp-custom-fixed.css');
+@import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/v1.0.0/assets/marp-theme-digion.css');
 ```
 
 ### チーム共有

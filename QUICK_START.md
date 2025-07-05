@@ -31,7 +31,7 @@ VS Codeの設定に以下を追加：
 ```json
 {
   "markdown.marp.themes": [
-    "./marp-custom-fixed.css"
+    "./marp-theme-digion.css"
   ],
   "markdown.marp.enableHtml": true
 }

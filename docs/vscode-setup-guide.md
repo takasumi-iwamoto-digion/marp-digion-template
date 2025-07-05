@@ -13,7 +13,7 @@ VS CodeのMarp拡張機能では、相対パスの解決方法がMarp CLIと異�
 ```json
 {
   "markdown.marp.themes": [
-    "./assets/marp-custom-fixed.css"
+    "./marp-theme-digion.css"
   ],
   "markdown.marp.enableHtml": true
 }
@@ -25,7 +25,7 @@ VS CodeのMarp拡張機能では、相対パスの解決方法がMarp CLIと異�
 ```yaml
 ---
 marp: true
-theme: marp-custom-fixed
+theme: marp-theme-digion
 ---
 ```
 
@@ -33,7 +33,7 @@ theme: marp-custom-fixed
 ```yaml
 ---
 marp: true
-theme: ./assets/marp-custom-fixed.css
+theme: ./marp-theme-digion.css
 ---
 ```
 
@@ -41,8 +41,8 @@ theme: ./assets/marp-custom-fixed.css
 
 | 環境 | ファイル | テーマ指定方法 |
 |------|----------|----------------|
-| VS Code プレビュー | basic-presentation-vscode.md | `theme: marp-custom-fixed` |
-| Marp CLI（開発） | basic-presentation-local.md | `theme: ../assets/marp-custom-fixed.css` |
+| VS Code プレビュー | basic-presentation-vscode.md | `theme: marp-theme-digion` |
+| Marp CLI（開発） | basic-presentation-local.md | `theme: ../marp-theme-digion.css` |
 | 本番（GitHub） | basic-presentation-github.md | `style: @import url(...)` |
 
 ## トラブルシューティング
