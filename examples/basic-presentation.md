@@ -1,7 +1,6 @@
 ---
 marp: true
-style: |
-  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/theme/marp-theme-digion.css');
+theme: digion
 transition: fade
 paginate: true
 html: true
@@ -87,7 +86,7 @@ html: true
 </div>
 <div>
 
-![width:350px](https://quickchart.io/chart?w=350&h=300&c={type:'bar',data:{labels:['7月','8月','9月','10月','11月','12月'],datasets:[{label:'アクティブユーザー数（万人）',data:[45,52,58,65,72,83],backgroundColor:'%23E60012',borderColor:'%23E60012',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,scales:{y:{beginAtZero:true,grid:{color:'rgba(0,0,0,0.1)'}},x:{grid:{display:false}}},plugins:{legend:{display:false}}}})
+![width:600px](https://quickchart.io/chart?h=500px&c={type:'bar',data:{labels:['7月','8月','9月','10月','11月','12月'],datasets:[{label:'アクティブユーザー数（万人）',data:[45,52,58,65,72,83],backgroundColor:'%23E60012',borderColor:'%23E60012',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,scales:{y:{beginAtZero:true,grid:{color:'rgba(0,0,0,0.1)'}},x:{grid:{display:false}}},plugins:{legend:{display:false}}}})
 
 </div>
 </div>
@@ -99,14 +98,14 @@ html: true
 <div class="columns">
 <div style="text-align: center;">
 
-![width:220px](https://quickchart.io/chart?w=300&h=300&c={type:'pie',data:{labels:['プロダクトA','プロダクトB','プロダクトC'],datasets:[{data:[45,35,20],backgroundColor:['%23E60012','%23666666','%23999999']}]},options:{plugins:{legend:{display:false}}}})
+![width:400px](https://quickchart.io/chart?w=400&h=400&c={type:'pie',data:{labels:['プロダクトA','プロダクトB','プロダクトC'],datasets:[{data:[45,35,20],backgroundColor:['%23E60012','%23666666','%23999999']}]},options:{plugins:{legend:{display:false}}}})
 
 ### Q1
 
 </div>
 <div style="text-align: center;">
 
-![width:220px](https://quickchart.io/chart?w=300&h=300&c={type:'pie',data:{labels:['プロダクトA','プロダクトB','プロダクトC'],datasets:[{data:[52,30,18],backgroundColor:['%23E60012','%23666666','%23999999']}]},options:{plugins:{legend:{display:false}}}})
+![width:400px](https://quickchart.io/chart?w=300&h=300&c={type:'pie',data:{labels:['プロダクトA','プロダクトB','プロダクトC'],datasets:[{data:[52,30,18],backgroundColor:['%23E60012','%23666666','%23999999']}]},options:{plugins:{legend:{display:false}}}})
 
 ### Q2
 
@@ -136,7 +135,7 @@ html: true
 <div style="text-align: center;">
 
 ### 売上高（億円）
-![width:280px](https://quickchart.io/chart?w=350&h=250&c={type:'line',data:{labels:['Q1','Q2','Q3','Q4'],datasets:[{label:'売上高',data:[320,350,385,410],borderColor:'%23E60012',backgroundColor:'rgba(230,0,18,0.1)',fill:true,tension:0.3}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:false,min:300}}}})
+![width:500px](https://quickchart.io/chart?w=350&h=250&c={type:'line',data:{labels:['Q1','Q2','Q3','Q4'],datasets:[{label:'売上高',data:[320,350,385,410],borderColor:'%23E60012',backgroundColor:'rgba(230,0,18,0.1)',fill:true,tension:0.3}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:false,min:300}}}})
 
 前年同期比 **+23%**
 
@@ -144,7 +143,7 @@ html: true
 <div style="text-align: center;">
 
 ### 営業利益（億円）
-![width:280px](https://quickchart.io/chart?w=350&h=250&c={type:'line',data:{labels:['Q1','Q2','Q3','Q4'],datasets:[{label:'営業利益',data:[45,52,61,72],borderColor:'%23E60012',backgroundColor:'rgba(230,0,18,0.1)',fill:true,tension:0.3}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:false,min:40}}}})
+![width:500px](https://quickchart.io/chart?w=350&h=250&c={type:'line',data:{labels:['Q1','Q2','Q3','Q4'],datasets:[{label:'営業利益',data:[45,52,61,72],borderColor:'%23E60012',backgroundColor:'rgba(230,0,18,0.1)',fill:true,tension:0.3}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:false,min:40}}}})
 
 前年同期比 **+35%**
 
@@ -179,7 +178,7 @@ html: true
 
 <div style="text-align: center;">
 
-![width:550px](https://quickchart.io/chart?w=600&h=300&c={type:'line',data:{labels:['2022/Q1','2022/Q2','2022/Q3','2022/Q4','2023/Q1','2023/Q2','2023/Q3','2023/Q4','2024/Q1'],datasets:[{label:'当社',data:[22.3,23.1,24.2,25.0,25.8,26.5,27.2,27.9,28.5],borderColor:'%23E60012',borderWidth:3,tension:0.3},{label:'競合A',data:[26.5,26.2,25.8,25.5,25.2,24.9,24.6,24.4,24.2],borderColor:'%23666666',borderWidth:2,tension:0.3},{label:'競合B',data:[20.1,19.8,19.5,19.3,19.1,18.9,18.8,18.7,18.7],borderColor:'%23999999',borderWidth:2,tension:0.3}]},options:{scales:{y:{beginAtZero:false,min:15,max:30}},plugins:{legend:{display:false}}}})
+![width:950px](https://quickchart.io/chart?w=600&h=300&c={type:'line',data:{labels:['2022/Q1','2022/Q2','2022/Q3','2022/Q4','2023/Q1','2023/Q2','2023/Q3','2023/Q4','2024/Q1'],datasets:[{label:'当社',data:[22.3,23.1,24.2,25.0,25.8,26.5,27.2,27.9,28.5],borderColor:'%23E60012',borderWidth:3,tension:0.3},{label:'競合A',data:[26.5,26.2,25.8,25.5,25.2,24.9,24.6,24.4,24.2],borderColor:'%23666666',borderWidth:2,tension:0.3},{label:'競合B',data:[20.1,19.8,19.5,19.3,19.1,18.9,18.8,18.7,18.7],borderColor:'%23999999',borderWidth:2,tension:0.3}]},options:{scales:{y:{beginAtZero:false,min:15,max:30}},plugins:{legend:{display:false}}}})
 
 </div>
 
