@@ -1,5 +1,12 @@
 /* @theme digion */
 
+/* スライドサイズとベース設定 */
+:root {
+  width: 1280px;
+  height: 720px;
+  font-size: 32px;
+}
+
 section.title {
   padding: 50px 70px !important;
 }
@@ -12,7 +19,9 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 150px;
+  padding: 150px 70px 70px 70px;
+  font-size: 20px;
+  line-height: 1.8;
 }
 
 /* DigiOnロゴ風のヘッダー */
@@ -52,6 +61,7 @@ section.title {
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 50% auto;
+  padding-top: 50px !important;
 }
 
 section.title h1 {
@@ -106,7 +116,9 @@ h2 {
   position: absolute;
   border-left: 5px solid #E60012;
   padding-left: 20px;
-  left: 50px; top: 50px;
+  left: 50px;
+  top: 70px;
+  margin: 0;
 }
 
 /* 箇条書きのスタイル */
@@ -161,8 +173,11 @@ section.end .address h3 {
   margin-bottom: 10px;
 }
 
-/* ページ番号を非表示 */
+/* ページ番号 */
 section[data-marpit-pagination]::after {
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
   font-size: 14px;
   color: #999999;
   font-weight: normal;
