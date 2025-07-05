@@ -28,8 +28,8 @@ section.title::before {
   background-repeat: no-repeat;
 }
 
-/* CONFIDENTIAL表記 */
-section.title::after {
+/* CONFIDENTIAL表記用の要素 */
+section.title > *:first-child::before {
   content: '';
   position: absolute;
   top: 30px;
@@ -39,6 +39,7 @@ section.title::after {
   background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image2.png?raw=true');
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 10;
 }
 
 /* タイトルスライド用のクラス */
@@ -160,8 +161,14 @@ section.end .address h3 {
   margin-bottom: 10px;
 }
 
-/* ページ番号を非表示（タイトルと最終ページ） */
-section.title::after,
-section.end::after {
+/* ページ番号を非表示 */
+section[data-marpit-pagination]::after {
+  font-size: 14px;
+  color: #999999;
+  font-weight: normal;
+}
+
+section.title[data-marpit-pagination]::after,
+section.end[data-marpit-pagination]::after {
   content: none !important;
 }
