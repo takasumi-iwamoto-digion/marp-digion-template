@@ -33,9 +33,7 @@ VS Code、Marp CLI、どちらでも同じパスで動作します。
 ```
 marp-digion-template/
 ├── marp-custom-fixed.css        # カスタムテーマ（HD: 1280×720）
-├── basic-presentation.md        # 基本的な使用例（ローカル版）
-├── basic-presentation-github.md # GitHub経由版の使用例
-├── advanced-presentation.md     # 高度なレイアウト例
+├── basic-presentation.md        # 基本的な使用例（高度なレイアウト例を含む）
 ├── images/                      # 画像ディレクトリ
 │   ├── image1.png              # DigiOnロゴ
 │   ├── image2.png              # CONFIDENTIAL表記
