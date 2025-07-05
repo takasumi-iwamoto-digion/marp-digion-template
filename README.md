@@ -53,6 +53,14 @@ marp-digion-template/
 │   ├── DigiOn-Template-half-left.png  # 左画像配置
 │   ├── DigiOn-Template-half-right.png # 右画像配置
 │   └── DigiOn-Template-last.png       # 最終スライド
+├── examples/                    # 生成されたスライドの例
+│   ├── basic-presentation.001.png     # タイトルスライド
+│   ├── basic-presentation.009.png     # 見出しスライド
+│   ├── basic-presentation.010.png     # 左画像レイアウト
+│   ├── basic-presentation.013.png     # コードブロック
+│   ├── basic-presentation.014.png     # テーブル
+│   ├── basic-presentation.015.png     # 最終スライド
+│   └── ...                            # その他のスライド
 ├── QUICK_START.md               # クイックスタートガイド
 └── README.md                    # このファイル
 ```
@@ -205,6 +213,28 @@ const digion = new DigiOnSDK({
 | DigiOn Video | Windows/Mac/Linux | 動画再生・編集 |
 | DigiOn Audio | iOS/Android | 音声処理・変換 |
 ```
+
+## 生成例
+
+`basic-presentation.md`から生成されたスライドの例：
+
+### タイトルスライド
+![タイトルスライド](examples/basic-presentation.001.png)
+
+### 見出しスライド（headline）
+![見出しスライド](examples/basic-presentation.009.png)
+
+### 画像レイアウト（左側）
+![左画像レイアウト](examples/basic-presentation.010.png)
+
+### コードブロック
+![コードブロック](examples/basic-presentation.013.png)
+
+### テーブル
+![テーブル](examples/basic-presentation.014.png)
+
+### 最終スライド
+![最終スライド](examples/basic-presentation.015.png)
 
 ## デザイン目標
 
