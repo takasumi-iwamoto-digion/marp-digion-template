@@ -59,6 +59,37 @@ marp-digion-template/
 └── README.md                    # このファイル
 ```
 
+## VS Code初期設定
+
+### 1. Marp for VS Code拡張機能のインストール
+
+1. VS Codeを開く
+2. 拡張機能ビュー（`Ctrl+Shift+X` または `Cmd+Shift+X`）を開く
+3. 「Marp for VS Code」を検索
+4. インストールボタンをクリック
+
+### 2. カスタムテーマの登録
+
+本リポジトリの`.vscode/settings.json`により、カスタムテーマは自動的に登録されます。
+
+手動で設定する場合は、VS Codeの設定（`Ctrl+,` または `Cmd+,`）を開き、以下を追加：
+
+```json
+{
+  "markdown.marp.themes": [
+    "./marp-custom-fixed.css"
+  ],
+  "markdown.marp.enableHtml": true
+}
+```
+
+### 3. プレビューの使い方
+
+- **プレビューを開く**: `Ctrl+K V` または `Cmd+K V`
+- **サイドバイサイドプレビュー**: `Ctrl+K Ctrl+V` または `Cmd+K Cmd+V`
+
+プレビューウィンドウではリアルタイムでスライドの見た目を確認できます。
+
 ## 使用方法
 
 ### 1. テーマの適用
@@ -113,21 +144,16 @@ style: |
 ```markdown
 <!-- _class: end -->
 
-<div class="addresses">
-  <div class="address">
-    <h3>本社</h3>
-    〒102-0084<br>
-    東京都千代田区二番町3-5<br>
-    麹町三葉ビル
-  </div>
-  <div class="address">
-    <h3>福岡オフィス</h3>
-    〒812-0011<br>
-    福岡県福岡市博多区博多駅前2-20-1<br>
-    大博多ビル
-  </div>
+<div class="company-info">
+  <div class="col1"></div>
+  <div class="col2"></div>
+  <div class="col3"></div>
+  <div class="col4"></div>
+  <div class="col5"></div>
 </div>
 ```
+
+※ 会社情報のテキストはすべてCSSで自動的に表示されます
 
 ## デザイン目標
 

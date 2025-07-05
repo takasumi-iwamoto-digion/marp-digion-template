@@ -17,11 +17,6 @@ paginate: true
 <div class="version">Ver.1.0</div>
 <div class="company">株式会社DigiOn</div>
 
-<!--
-このプレゼンテーションはシンプルな構成になっています。
-VS Code、Marp CLI、どちらでも同じパスで動作します。
--->
-
 ---
 
 ## テンプレートの特徴
