@@ -1,0 +1,168 @@
+/* カスタムテーマ設定 */
+
+section.title {
+  padding: 50px 70px !important;
+}
+
+section {
+  font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 150px;
+}
+
+
+/* DigiOnロゴ風のヘッダー */
+section.title::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  width: 150px;
+  height: 50px;
+  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image1.png?raw=true');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* CONFIDENTIAL表記 */
+section.title::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 150px;
+  height: 50px;
+  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image2.png?raw=true');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* タイトルスライド用のクラス */
+section.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image4.jpg?raw=true');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+}
+
+section.title h1 {
+  font-size: 64px;
+  color: #333333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+section.title p {
+  font-size: 32px;
+  color: #666666;
+  margin-bottom: 100px;
+}
+
+section.title .date {
+  position: absolute;
+  bottom: 120px;
+  left: 70px;
+  font-size: 16px;
+  color: #666666;
+}
+
+section.title .info {
+  position: absolute;
+  bottom: 95px;
+  left: 70px;
+  font-size: 16px;
+  color: #666666;
+}
+
+section.title .version {
+  position: absolute;
+  bottom: 70px;
+  left: 70px;
+  font-size: 16px;
+  color: #666666;
+}
+
+section.title .company {
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
+  font-size: 14px;
+  color: #666666;
+}
+
+/* 通常スライド */
+h2 {
+  font-size: 42px;
+  color: #333333;
+  position: absolute;
+  border-left: 5px solid #E60012;
+  padding-left: 20px;
+  left: 50px; top: 50px;
+}
+
+/* 箇条書きのスタイル */
+ul {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+ul li::marker {
+  color: #E60012;
+}
+
+/* 最終スライドのスタイル */
+section.end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image5.jpg?raw=true');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+section.end::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 150px;
+  height: 50px;
+  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image1.jpg?raw=true');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section.end .addresses {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 50px;
+}
+
+section.end .address {
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
+
+section.end .address h3 {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* ページ番号を非表示（タイトルと最終ページ） */
+section.title::after,
+section.end::after {
+  content: none !important;
+}
