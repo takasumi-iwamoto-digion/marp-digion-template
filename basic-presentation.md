@@ -155,13 +155,10 @@ paginate: true
 
 ---
 
-## 見出しスライド（headline）
+<!-- _class: headline -->
+<!-- _paginate: false -->
 
-大きな見出しのみのスライドです。
-
-セクションの区切りや、重要なメッセージの強調に使用します。
-
-`target/DigiOn-Template-headline.png`のスタイルを参考にしています。
+## 大見出し
 
 ---
 

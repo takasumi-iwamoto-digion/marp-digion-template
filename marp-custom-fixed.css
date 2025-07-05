@@ -345,6 +345,57 @@ section table tr:hover td {
   background-color: #f5f5f5;
 }
 
+/* headlineスライドのスタイル */
+section.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+/* headline背景画像（薄くオーバーレイ） */
+section.headline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+section.headline h2 {
+  font-size: 72px;
+  color: #333333;
+  font-weight: 900;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  border: none;
+  padding: 0;
+  left: auto;
+  top: auto;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+section.headline p {
+  font-size: 24px;
+  color: #666666;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+}
+
 /* ページ番号 */
 section[data-marpit-pagination]::after {
   position: absolute;
@@ -356,6 +407,7 @@ section[data-marpit-pagination]::after {
 }
 
 section.title[data-marpit-pagination]::after,
-section.end[data-marpit-pagination]::after {
+section.end[data-marpit-pagination]::after,
+section.headline[data-marpit-pagination]::after {
   content: none !important;
 }
