@@ -41,8 +41,6 @@ VS Code、Marp CLI、どちらでも同じパスで動作します。
 <!-- _class: end -->
 <!-- _paginate: false -->
 
-<img src="https://github.com/takasumi-iwamoto-digion/assets/blob/main/image1.png?raw=true" class="logo" alt="DigiOn">
-
 <div class="company-info">
   <div class="info-column">
     <h3>株式会社デジオン</h3>
