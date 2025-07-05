@@ -42,37 +42,9 @@ VS Code、Marp CLI、どちらでも同じパスで動作します。
 <!-- _paginate: false -->
 
 <div class="company-info">
-  <div class="info-column">
-    <h3>株式会社デジオン</h3>
-  </div>
-  <div class="info-column">
-    <h3>福岡本社</h3>
-    <p>〒814-0001<br>
-    福岡市早良区百道浜2丁目3-8<br>
-    RKB放送会館6F</p>
-  </div>
-  <div class="info-column">
-    <h3>東京オフィス</h3>
-    <p>〒100-6215<br>
-    東京都千代田区丸の内1丁<br>
-    目11番1号 パシフィックセン<br>
-    チュリープレイス<br>
-    丸の内 15F</p>
-  </div>
-  <div class="info-column">
-    <h3>HEADQUARTERS</h3>
-    <p>6F RKB Broadcasting Building<br>
-    2-3-8 Momochihama, Sawara-ku<br>
-    Fukuoka-shi, Fukuoka 814-0001 JAPAN</p>
-  </div>
-  <div class="info-column">
-    <h3>BRANCH OFFICE</h3>
-    <p>15F Pacific Century Place<br>
-    Marunouchi 1-11-1<br>
-    Marunouchi, Chiyoda-ku, Tokyo<br>
-    100-6215 JAPAN</p>
-  </div>
+  <div class="col1"></div>
+  <div class="col2"></div>
+  <div class="col3"></div>
+  <div class="col4"></div>
+  <div class="col5"></div>
 </div>
-
-<div class="footer-url">www.digion.com</div>
-<div class="copyright">© DigiOn,Inc. All rights reserved.</div>

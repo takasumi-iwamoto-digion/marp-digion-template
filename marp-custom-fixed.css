@@ -174,7 +174,7 @@ section.end .company-info {
   box-sizing: border-box;
 }
 
-section.end .info-column {
+section.end .company-info > div {
   flex: 1;
   font-size: 11px;
   color: #666666;
@@ -182,30 +182,89 @@ section.end .info-column {
   padding: 0 10px;
 }
 
-section.end .info-column h3 {
+/* 各列の内容をCSSで挿入 */
+section.end .col1::before {
+  content: '株式会社デジオン';
   font-size: 12px;
   color: #333333;
-  margin-bottom: 5px;
   font-weight: bold;
 }
 
-section.end .info-column p {
-  margin: 0;
+section.end .col2::before {
+  content: '福岡本社';
+  font-size: 12px;
+  color: #333333;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+section.end .col2::after {
+  content: '〒814-0001\A福岡市早良区百道浜2丁目3-8\ARKB放送会館6F';
+  white-space: pre-line;
+  display: block;
+}
+
+section.end .col3::before {
+  content: '東京オフィス';
+  font-size: 12px;
+  color: #333333;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+section.end .col3::after {
+  content: '〒100-6215\A東京都千代田区丸の内1丁\A目11番1号 パシフィックセン\Aチュリープレイス\A丸の内 15F';
+  white-space: pre-line;
+  display: block;
+}
+
+section.end .col4::before {
+  content: 'HEADQUARTERS';
+  font-size: 12px;
+  color: #333333;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+section.end .col4::after {
+  content: '6F RKB Broadcasting Building\A2-3-8 Momochihama, Sawara-ku\AFukuoka-shi, Fukuoka 814-0001 JAPAN';
+  white-space: pre-line;
+  display: block;
+}
+
+section.end .col5::before {
+  content: 'BRANCH OFFICE';
+  font-size: 12px;
+  color: #333333;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+section.end .col5::after {
+  content: '15F Pacific Century Place\AMarunouchi 1-11-1\AMarunouchi, Chiyoda-ku, Tokyo\A100-6215 JAPAN';
+  white-space: pre-line;
+  display: block;
 }
 
 /* 最下部のURL */
-section.end .footer-url {
+section.end .company-info::before {
+  content: 'www.digion.com';
   position: absolute;
-  bottom: 50px;
+  bottom: -70px;
   left: 50px;
   font-size: 10px;
   color: #999999;
 }
 
 /* コピーライト */
-section.end .copyright {
+section.end .company-info::after {
+  content: '© DigiOn,Inc. All rights reserved.';
   position: absolute;
-  bottom: 50px;
+  bottom: -70px;
   right: 50px;
   font-size: 10px;
   color: #999999;
