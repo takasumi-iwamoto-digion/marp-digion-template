@@ -1,0 +1,268 @@
+/* @theme digion-fullhd */
+
+/* FullHDスライドサイズとベース設定 */
+:root {
+  width: 1920px;
+  height: 1080px;
+  font-size: 48px; /* HD版の1.5倍に調整 */
+}
+
+section {
+  font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 225px; /* 比率を維持して調整 */
+}
+
+/* タイトルスライド用のクラス */
+section.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 75px 105px !important; /* 比率を維持 */
+  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image4.jpg?raw=true');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+}
+
+/* DigiOnロゴ */
+section.title::before {
+  content: '';
+  position: absolute;
+  top: 45px;
+  left: 75px;
+  width: 225px;
+  height: 75px;
+  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image1.png?raw=true');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* CONFIDENTIAL表記 */
+section.title::after {
+  content: '';
+  position: absolute;
+  top: 45px;
+  right: 75px;
+  width: 225px;
+  height: 75px;
+  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image2.png?raw=true');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section.title h1 {
+  font-size: 96px;
+  color: #333333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+section.title p {
+  font-size: 48px;
+  color: #666666;
+  margin-bottom: 150px;
+}
+
+section.title .date {
+  position: absolute;
+  bottom: 180px;
+  left: 105px;
+  font-size: 24px;
+  color: #666666;
+}
+
+section.title .info {
+  position: absolute;
+  bottom: 142px;
+  left: 105px;
+  font-size: 24px;
+  color: #666666;
+}
+
+section.title .version {
+  position: absolute;
+  bottom: 105px;
+  left: 105px;
+  font-size: 24px;
+  color: #666666;
+}
+
+section.title .company {
+  position: absolute;
+  bottom: 75px;
+  right: 105px;
+  font-size: 21px;
+  color: #666666;
+}
+
+/* 通常スライド */
+h2 {
+  font-size: 63px;
+  color: #333333;
+  position: absolute;
+  border-left: 7.5px solid #E60012;
+  padding-left: 30px;
+  left: 75px; 
+  top: 75px;
+}
+
+/* 箇条書きのスタイル */
+ul {
+  font-size: 30px;
+  line-height: 1.8;
+}
+
+ul li::marker {
+  color: #E60012;
+}
+
+/* フラグメントリストのスタイル */
+ul > li[data-marpit-fragment] {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+ul > li[data-marpit-fragment].visible,
+ul > li[data-marpit-fragment].active {
+  opacity: 1;
+}
+
+/* ページネーション */
+section::after {
+  font-size: 21px;
+  color: #999999;
+  font-weight: normal;
+}
+
+/* タイトルと最終ページではページ番号を非表示 */
+section.title::after,
+section.end::after {
+  content: none !important;
+}
+
+/* 最終スライドのスタイル */
+section.end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image5.jpg?raw=true');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+section.end::before {
+  content: '';
+  position: absolute;
+  top: 45px;
+  right: 75px;
+  width: 225px;
+  height: 75px;
+  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image1.png?raw=true');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section.end .addresses {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 75px;
+}
+
+section.end .address {
+  text-align: center;
+  font-size: 21px;
+  color: #666666;
+}
+
+section.end .address h3 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+/* ヘッダー・フッターのスタイル */
+header,
+footer {
+  position: absolute;
+  left: 75px;
+  right: 75px;
+  font-size: 21px;
+  color: #666666;
+}
+
+header {
+  top: 30px;
+}
+
+footer {
+  bottom: 30px;
+}
+
+/* コードブロックのスタイル */
+pre {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.5em;
+  overflow-x: auto;
+  font-size: 27px;
+}
+
+code {
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Consolas', 'Monaco', monospace;
+}
+
+/* テーブルのスタイル */
+table {
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 27px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px 18px;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+/* 引用のスタイル */
+blockquote {
+  border-left: 6px solid #E60012;
+  padding-left: 1.5em;
+  color: #666666;
+  font-style: italic;
+}
+
+/* 画像のスタイル */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* プリント用スタイル */
+@media print {
+  section {
+    break-after: page;
+  }
+  
+  /* プリント時はトランジションを無効化 */
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
