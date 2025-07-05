@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: ./marp-custom-fixed.css
+theme: digion
 transition: fade
 paginate: true
 ---
@@ -107,17 +107,10 @@ digion.initialize().then(() => {
 <!-- _class: end -->
 <!-- _paginate: false -->
 
-<div class="addresses">
-  <div class="address">
-    <h3>本社</h3>
-    〒102-0084<br>
-    東京都千代田区二番町3-5<br>
-    麹町三葉ビル
-  </div>
-  <div class="address">
-    <h3>福岡オフィス</h3>
-    〒812-0011<br>
-    福岡県福岡市博多区博多駅前2-20-1<br>
-    大博多ビル
-  </div>
+<div class="company-info">
+  <div class="col1"></div>
+  <div class="col2"></div>
+  <div class="col3"></div>
+  <div class="col4"></div>
+  <div class="col5"></div>
 </div>
