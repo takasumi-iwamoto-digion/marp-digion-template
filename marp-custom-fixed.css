@@ -32,7 +32,7 @@ section.title::before {
   left: 50px;
   width: 150px;
   height: 50px;
-  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image1.png?raw=true');
+  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image1.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -45,7 +45,7 @@ section.title > *:first-child::before {
   right: 50px;
   width: 150px;
   height: 50px;
-  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image2.png?raw=true');
+  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image2.png');
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 10;
@@ -57,7 +57,7 @@ section.title {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image4.jpg?raw=true');
+  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image4.jpg');
   background-position: right -50px center;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -150,7 +150,7 @@ section.end {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image5.jpg?raw=true');
+  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image5.jpg');
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -167,7 +167,7 @@ section.end::before {
   transform: translate(-50%, -50%);
   width: 200px;
   height: 80px;
-  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image1.png?raw=true');
+  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image1.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
