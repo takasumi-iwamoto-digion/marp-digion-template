@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: mytheme
+theme: digion
 transition: fade
 paginate: true
 ---
@@ -29,49 +29,14 @@ VS Code、Marp CLI、どちらでも同じパスで動作します。
 このテンプレートは以下の改善を行いました：
 
 - **シンプルなファイル構成**: ルートに必要なファイルを配置
+  - test
+    - test2
 - **統一されたパス**: どの環境でも `./marp-custom-fixed.css`
 - **画像の整理**: `images/` ディレクトリに集約
 - **ドキュメント**: `docs/` ディレクトリに整理
 
 ---
 
-## 使用方法
-
-### VS Code
-1. このファイルを開く
-2. `Ctrl+K V`でプレビュー
-
-### Marp CLI
-```bash
-# プレビューサーバー
-marp -s basic-presentation.md
-
-# PDF出力
-marp --pdf basic-presentation.md
-
-# ウォッチモード
-marp -w -s basic-presentation.md
-```
-
----
-
-## ファイル構成
-
-```
-marp-digion-template/
-├── marp-custom-fixed.css    # テーマファイル
-├── basic-presentation.md    # このファイル
-├── images/                  # 画像ディレクトリ
-│   ├── image1.png          # DigiOnロゴ
-│   ├── image2.png          # CONFIDENTIAL表記
-│   └── ...
-├── docs/                    # ドキュメント
-│   └── *.md
-└── .vscode/                 # VS Code設定
-    └── settings.json
-```
-
----
 
 <!-- _class: end -->
 <!-- _paginate: false -->
