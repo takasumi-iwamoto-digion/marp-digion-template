@@ -3,8 +3,8 @@
 *.pptx
 *.html
 
-# Generated screenshots
-examples/*.png
+# Generated screenshots (temporarily kept for README)
+# examples/*.png
 
 # Dependencies
 node_modules/
