@@ -35,6 +35,7 @@ marp-digion-template/
 ├── marp-custom-fixed.css        # カスタムテーマ（HD: 1280×720）
 ├── basic-presentation.md        # 基本的な使用例（ローカル版）
 ├── basic-presentation-github.md # GitHub経由版の使用例
+├── advanced-presentation.md     # 高度なレイアウト例
 ├── images/                      # 画像ディレクトリ
 │   ├── image1.png              # DigiOnロゴ
 │   ├── image2.png              # CONFIDENTIAL表記
@@ -45,6 +46,13 @@ marp-digion-template/
 │   ├── github-hosting-guide.md
 │   ├── vscode-setup-guide.md
 │   └── ...
+├── target/                      # デザイン目標となるテンプレート画像
+│   ├── DigiOn-Template-title.png      # タイトルスライド
+│   ├── DigiOn-Template-default.png    # 通常スライド
+│   ├── DigiOn-Template-headline.png   # 見出しスライド
+│   ├── DigiOn-Template-half-left.png  # 左画像配置
+│   ├── DigiOn-Template-half-right.png # 右画像配置
+│   └── DigiOn-Template-last.png       # 最終スライド
 ├── .vscode/                     # VS Code設定
 │   └── settings.json
 ├── .marprc.yml                  # Marp CLI設定ファイル
@@ -121,6 +129,19 @@ style: |
 </div>
 ```
 
+## デザイン目標
+
+`target/`ディレクトリには、このテーマが目指すデザインのテンプレート画像が含まれています：
+
+- **DigiOn-Template-title.png**: タイトルスライドのデザイン
+- **DigiOn-Template-default.png**: 通常スライドのレイアウト
+- **DigiOn-Template-headline.png**: 見出しスライドのスタイル
+- **DigiOn-Template-half-left.png**: 左側に画像を配置したレイアウト
+- **DigiOn-Template-half-right.png**: 右側に画像を配置したレイアウト
+- **DigiOn-Template-last.png**: 最終スライドのデザイン
+
+これらの画像を参考に、CSSテーマが作成されています。
+
 ## カスタマイズ
 
 CSSファイルを編集することで、以下の要素をカスタマイズできます：
@@ -132,8 +153,8 @@ CSSファイルを編集することで、以下の要素をカスタマイズ�
 
 ## 注意事項
 
-- 画像ファイルはGitHub上の raw URLを参照しています
-- プライベートリポジトリの場合は、適切なアクセス権限が必要です
+- ローカル版では画像ファイルは`images/`ディレクトリから参照されます
+- GitHub版を使用する場合は、インターネット接続が必要です
 - CONFIDENTIALマークが含まれているため、社外への公開時は注意してください
 
 ## ライセンス
