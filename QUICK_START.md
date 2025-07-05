@@ -9,7 +9,8 @@ DigiOnテーマを使ってプレゼンテーションを素早く作成する�
 ```yaml
 ---
 marp: true
-theme: digion
+style: |
+  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/marp-theme-digion.css');
 ---
 
 <!-- _class: title -->
@@ -145,4 +146,4 @@ marp --allow-local-files --pptx my-presentation.md
 
 ## それだけです！
 
-テーマ名は`digion`です。すべての環境で同じ設定が使えます。
+GitHub経由でテーマを読み込んで、すぐに使い始められます。

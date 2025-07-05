@@ -106,17 +106,6 @@ VS Codeの設定（`Ctrl+,` または `Cmd+,`）を開き、以下を追加：
 
 ### 1. テーマの適用
 
-#### 方法A: ローカル版（開発・オフライン用）
-
-```yaml
----
-marp: true
-theme: digion
----
-```
-
-#### 方法B: GitHub経由（配布・共有用）
-
 ```yaml
 ---
 marp: true
@@ -125,7 +114,7 @@ style: |
 ---
 ```
 
-**注意**: GitHub経由版でも、テーマ名は内部的に`digion`として定義されています。
+**注意**: テーマ名は内部的に`digion`として定義されています。
 
 ### 2. スライドクラスの使用
 
@@ -410,7 +399,6 @@ CSSファイルを編集することで、以下の要素をカスタマイズ�
   # PDF出力
   marp --pdf basic-presentation.md
   ```
-- ローカル版では画像ファイルは`images/`ディレクトリから参照されます
 - **画像を含むPDF/PNG出力時は `--allow-local-files` オプションが必要です**
   ```bash
   marp --allow-local-files --pdf basic-presentation.md
