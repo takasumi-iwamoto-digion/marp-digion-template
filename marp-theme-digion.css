@@ -2,15 +2,15 @@
 
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
 
-/* スライドサイズとベース設定 */
+/* スライドサイズとベース設定 - FHD */
 :root {
-  width: 1280px;
-  height: 720px;
-  font-size: 32px;
+  width: 1920px;
+  height: 1080px;
+  font-size: 48px; /* HD: 32px * 1.5 */
 }
 
 section.title {
-  padding: 50px 70px !important;
+  padding: 75px 105px !important; /* HD: 50px * 1.5, 70px * 1.5 */
 }
 
 section {
@@ -21,8 +21,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 150px 50px 30px 50px;
-  font-size: 20px;
+  padding: 225px 75px 45px 75px; /* HD: 150px * 1.5, 50px * 1.5, 30px * 1.5 */
+  font-size: 30px; /* HD: 20px * 1.5 */
   line-height: 1.8;
 }
 
@@ -30,10 +30,10 @@ section {
 section.title::before {
   content: '';
   position: absolute;
-  top: 30px;
-  left: 50px;
-  width: 150px;
-  height: 50px;
+  top: 45px; /* HD: 30px * 1.5 */
+  left: 75px; /* HD: 50px * 1.5 */
+  width: 225px; /* HD: 150px * 1.5 */
+  height: 75px; /* HD: 50px * 1.5 */
   background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image1.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -43,10 +43,10 @@ section.title::before {
 section.title > *:first-child::before {
   content: '';
   position: absolute;
-  top: 30px;
-  right: 50px;
-  width: 150px;
-  height: 50px;
+  top: 45px; /* HD: 30px * 1.5 */
+  right: 75px; /* HD: 50px * 1.5 */
+  width: 225px; /* HD: 150px * 1.5 */
+  height: 75px; /* HD: 50px * 1.5 */
   background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image2.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -60,31 +60,31 @@ section.title {
   justify-content: center;
   align-items: flex-start;
   background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image4.jpg');
-  background-position: right -50px center;
+  background-position: right -75px center; /* HD: -50px * 1.5 */
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding-top: 50px !important;
+  padding-top: 75px !important; /* HD: 50px * 1.5 */
 }
 
 section.title h1 {
-  font-size: 72px;
+  font-size: 108px; /* HD: 72px * 1.5 */
   color: #333333;
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* HD: 10px * 1.5 */
   font-weight: 900;
   letter-spacing: 0.02em;
 }
 
 section.title p {
-  font-size: 24px;
+  font-size: 36px; /* HD: 24px * 1.5 */
   color: #888888;
-  margin-bottom: 100px;
+  margin-bottom: 150px; /* HD: 100px * 1.5 */
 }
 
 section.title .date {
   position: absolute;
-  bottom: 120px;
-  left: 70px;
-  font-size: 14px;
+  bottom: 180px; /* HD: 120px * 1.5 */
+  left: 105px; /* HD: 70px * 1.5 */
+  font-size: 21px; /* HD: 14px * 1.5 */
   color: #333333;
 }
 
@@ -92,53 +92,53 @@ section.title .date {
 section.title .date::before {
   content: '';
   position: absolute;
-  bottom: -10px;
+  bottom: -15px; /* HD: -10px * 1.5 */
   left: 0;
-  width: 40px;
-  height: 1px;
+  width: 60px; /* HD: 40px * 1.5 */
+  height: 1.5px; /* HD: 1px * 1.5 */
   background-color: #ccc;
 }
 
 section.title .info {
   position: absolute;
-  bottom: 95px;
-  left: 70px;
-  font-size: 14px;
+  bottom: 142.5px; /* HD: 95px * 1.5 */
+  left: 105px; /* HD: 70px * 1.5 */
+  font-size: 21px; /* HD: 14px * 1.5 */
   color: #333333;
 }
 
 section.title .version {
   position: absolute;
-  bottom: 70px;
-  left: 70px;
-  font-size: 14px;
+  bottom: 105px; /* HD: 70px * 1.5 */
+  left: 105px; /* HD: 70px * 1.5 */
+  font-size: 21px; /* HD: 14px * 1.5 */
   color: #333333;
 }
 
 section.title .company {
   position: absolute;
-  bottom: 30px;
-  right: 50px;
-  font-size: 13px;
+  bottom: 45px; /* HD: 30px * 1.5 */
+  right: 75px; /* HD: 50px * 1.5 */
+  font-size: 19.5px; /* HD: 13px * 1.5 */
   color: #333333;
   font-weight: normal;
 }
 
 /* 通常スライド */
 h2 {
-  font-size: 42px;
+  font-size: 63px; /* HD: 42px * 1.5 */
   color: #333333;
   position: absolute;
-  border-left: 5px solid #E60012;
-  padding-left: 20px;
-  left: 50px;
-  top: 50px;
+  border-left: 7.5px solid #E60012; /* HD: 5px * 1.5 */
+  padding-left: 30px; /* HD: 20px * 1.5 */
+  left: 75px; /* HD: 50px * 1.5 */
+  top: 75px; /* HD: 50px * 1.5 */
   margin: 0;
 }
 
 /* 箇条書きのスタイル */
 ul {
-  font-size: 20px;
+  font-size: 30px; /* HD: 20px * 1.5 */
   line-height: 1.8;
 }
 
@@ -167,8 +167,8 @@ section.end::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px;
-  height: 80px;
+  width: 300px; /* HD: 200px * 1.5 */
+  height: 120px; /* HD: 80px * 1.5 */
   background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image1.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -179,39 +179,39 @@ section.end::before {
 /* 会社情報コンテナ */
 section.end .company-info {
   position: absolute;
-  bottom: 120px;
+  bottom: 180px; /* HD: 120px * 1.5 */
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 75px; /* HD: 0 50px * 1.5 */
   width: 100%;
   box-sizing: border-box;
 }
 
 section.end .company-info > div {
   flex: 1;
-  font-size: 11px;
+  font-size: 16.5px; /* HD: 11px * 1.5 */
   color: #666666;
   line-height: 1.6;
-  padding: 0 10px;
+  padding: 0 15px; /* HD: 0 10px * 1.5 */
 }
 
 /* 各列の内容をCSSで挿入 */
 section.end .col1::before {
   content: '株式会社デジオン';
-  font-size: 12px;
+  font-size: 18px; /* HD: 12px * 1.5 */
   color: #333333;
   font-weight: bold;
 }
 
 section.end .col2::before {
   content: '福岡本社';
-  font-size: 12px;
+  font-size: 18px; /* HD: 12px * 1.5 */
   color: #333333;
   font-weight: bold;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 7.5px; /* HD: 5px * 1.5 */
 }
 
 section.end .col2::after {
@@ -222,11 +222,11 @@ section.end .col2::after {
 
 section.end .col3::before {
   content: '東京オフィス';
-  font-size: 12px;
+  font-size: 18px; /* HD: 12px * 1.5 */
   color: #333333;
   font-weight: bold;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 7.5px; /* HD: 5px * 1.5 */
 }
 
 section.end .col3::after {
@@ -237,11 +237,11 @@ section.end .col3::after {
 
 section.end .col4::before {
   content: 'HEADQUARTERS';
-  font-size: 12px;
+  font-size: 18px; /* HD: 12px * 1.5 */
   color: #333333;
   font-weight: bold;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 7.5px; /* HD: 5px * 1.5 */
 }
 
 section.end .col4::after {
@@ -252,11 +252,11 @@ section.end .col4::after {
 
 section.end .col5::before {
   content: 'BRANCH OFFICE';
-  font-size: 12px;
+  font-size: 18px; /* HD: 12px * 1.5 */
   color: #333333;
   font-weight: bold;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 7.5px; /* HD: 5px * 1.5 */
 }
 
 section.end .col5::after {
@@ -269,9 +269,9 @@ section.end .col5::after {
 section.end .company-info::before {
   content: 'www.digion.com';
   position: absolute;
-  bottom: -70px;
-  left: 50px;
-  font-size: 10px;
+  bottom: -105px; /* HD: -70px * 1.5 */
+  left: 75px; /* HD: 50px * 1.5 */
+  font-size: 15px; /* HD: 10px * 1.5 */
   color: #999999;
 }
 
@@ -279,44 +279,44 @@ section.end .company-info::before {
 section.end .company-info::after {
   content: '© DigiOn,Inc. All rights reserved.';
   position: absolute;
-  bottom: -70px;
-  right: 50px;
-  font-size: 10px;
+  bottom: -105px; /* HD: -70px * 1.5 */
+  right: 75px; /* HD: 50px * 1.5 */
+  font-size: 15px; /* HD: 10px * 1.5 */
   color: #999999;
 }
 
 /* コードブロックのスタイル */
 section pre {
-  font-size: 14px;
+  font-size: 21px; /* HD: 14px * 1.5 */
   line-height: 1.4;
   background-color: #f5f5f5;
-  padding: 15px;
-  border-radius: 4px;
+  padding: 22.5px; /* HD: 15px * 1.5 */
+  border-radius: 6px; /* HD: 4px * 1.5 */
   overflow-x: auto;
 }
 
 section code {
-  font-size: 14px;
+  font-size: 21px; /* HD: 14px * 1.5 */
   font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
 }
 
 /* インラインコード */
 section p code,
 section li code {
-  font-size: 16px;
+  font-size: 24px; /* HD: 16px * 1.5 */
   background-color: #f0f0f0;
-  padding: 2px 4px;
-  border-radius: 3px;
+  padding: 3px 6px; /* HD: 2px * 1.5, 4px * 1.5 */
+  border-radius: 4.5px; /* HD: 3px * 1.5 */
   color: #d73a49;
 }
 
 /* テーブルのスタイル */
 section table {
-  font-size: 16px;
+  font-size: 24px; /* HD: 16px * 1.5 */
   border-collapse: collapse;
   width: 100%;
-  margin: 20px 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 30px 0; /* HD: 20px * 1.5 */
+  box-shadow: 0 1.5px 4.5px rgba(0, 0, 0, 0.1); /* HD: shadow scaled */
 }
 
 section table thead {
@@ -324,18 +324,18 @@ section table thead {
 }
 
 section table th {
-  padding: 12px 15px;
+  padding: 18px 22.5px; /* HD: 12px * 1.5, 15px * 1.5 */
   text-align: left;
   font-weight: bold;
   color: #333;
-  border: 1px solid #ddd;
+  border: 1.5px solid #ddd; /* HD: 1px * 1.5 */
   background-color: #f0f0f0;
 }
 
 section table td {
-  padding: 10px 15px;
+  padding: 15px 22.5px; /* HD: 10px * 1.5, 15px * 1.5 */
   text-align: left;
-  border: 1px solid #ddd;
+  border: 1.5px solid #ddd; /* HD: 1px * 1.5 */
   background-color: #fff;
 }
 
@@ -353,7 +353,7 @@ section.headline {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 75px; /* HD: 50px * 1.5 */
   position: relative;
   background-color: #f5f5f5;
 }
@@ -375,7 +375,7 @@ section.headline::before {
 }
 
 section.headline h2 {
-  font-size: 72px;
+  font-size: 108px; /* HD: 72px * 1.5 */
   color: #333333;
   font-weight: 900;
   text-align: center;
@@ -390,12 +390,12 @@ section.headline h2 {
 }
 
 section.headline p {
-  font-size: 24px;
+  font-size: 36px; /* HD: 24px * 1.5 */
   color: #666666;
   text-align: center;
   position: relative;
   z-index: 1;
-  margin-top: 20px;
+  margin-top: 30px; /* HD: 20px * 1.5 */
 }
 
 /* ページ番号 */
@@ -403,7 +403,7 @@ section[data-marpit-pagination]::after {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 14px;
+  font-size: 21px; /* HD: 14px * 1.5 */
   color: #999999;
   font-weight: normal;
 }
@@ -418,50 +418,50 @@ section.headline[data-marpit-pagination]::after {
 section .columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem;
+  gap: 3rem; /* HD: 2rem * 1.5 */
   align-items: start;
-  margin-top: 1rem;
+  margin-top: 1.5rem; /* HD: 1rem * 1.5 */
 }
 
 section .columns-3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 2.25rem; /* HD: 1.5rem * 1.5 */
   align-items: start;
-  margin-top: 1rem;
+  margin-top: 1.5rem; /* HD: 1rem * 1.5 */
 }
 
 section .columns-auto {
   display: grid;
   grid-auto-flow: column;
-  gap: 2rem;
+  gap: 3rem; /* HD: 2rem * 1.5 */
   align-items: start;
-  margin-top: 1rem;
+  margin-top: 1.5rem; /* HD: 1rem * 1.5 */
 }
 
 /* 列の幅を指定できるクラス */
 section .columns-40-60 {
   display: grid;
   grid-template-columns: 40% 60%;
-  gap: 2rem;
+  gap: 3rem; /* HD: 2rem * 1.5 */
   align-items: start;
-  margin-top: 1rem;
+  margin-top: 1.5rem; /* HD: 1rem * 1.5 */
 }
 
 section .columns-60-40 {
   display: grid;
   grid-template-columns: 60% 40%;
-  gap: 2rem;
+  gap: 3rem; /* HD: 2rem * 1.5 */
   align-items: start;
-  margin-top: 1rem;
+  margin-top: 1.5rem; /* HD: 1rem * 1.5 */
 }
 
 /* Flexboxアプローチ */
 section .flex-columns {
   display: flex;
-  gap: 2rem;
+  gap: 3rem; /* HD: 2rem * 1.5 */
   align-items: start;
-  margin-top: 1rem;
+  margin-top: 1.5rem; /* HD: 1rem * 1.5 */
 }
 
 section .flex-columns > * {
@@ -472,21 +472,21 @@ section .flex-columns > * {
 section .rows {
   display: grid;
   grid-template-rows: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  height: calc(100% - 100px);
+  gap: 1.5rem; /* HD: 1rem * 1.5 */
+  height: calc(100% - 150px); /* HD: 100px * 1.5 */
 }
 
 /* レガシーcolumn-countアプローチ（互換性のため） */
 section .twocols {
-  margin-top: 2rem;
+  margin-top: 3rem; /* HD: 2rem * 1.5 */
   column-count: 2;
-  column-gap: 2rem;
+  column-gap: 3rem; /* HD: 2rem * 1.5 */
 }
 
 section .threecols {
-  margin-top: 2rem;
+  margin-top: 3rem; /* HD: 2rem * 1.5 */
   column-count: 3;
-  column-gap: 1.5rem;
+  column-gap: 2.25rem; /* HD: 1.5rem * 1.5 */
 }
 
 /* Bootstrap統合用の調整 */
@@ -497,7 +497,7 @@ section h6.alert-heading {
   border: none !important;
   padding: 0 !important;
   font-size: inherit !important;
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 0.75rem !important; /* HD: 0.5rem * 1.5 */
   left: auto !important;
   top: auto !important;
 }
@@ -507,32 +507,32 @@ section .container-fluid {
 }
 
 section .card {
-  font-size: 16px;
+  font-size: 24px; /* HD: 16px * 1.5 */
 }
 
 section .badge {
-  font-size: 12px;
+  font-size: 18px; /* HD: 12px * 1.5 */
 }
 
 section .alert {
-  font-size: 16px;
+  font-size: 24px; /* HD: 16px * 1.5 */
 }
 
 section .table {
-  font-size: 14px;
-  margin: 10px 0;
+  font-size: 21px; /* HD: 14px * 1.5 */
+  margin: 15px 0; /* HD: 10px * 1.5 */
 }
 
 section .progress {
-  font-size: 12px;
+  font-size: 18px; /* HD: 12px * 1.5 */
 }
 
 section .btn {
-  font-size: 14px;
-  padding: 0.375rem 0.75rem;
+  font-size: 21px; /* HD: 14px * 1.5 */
+  padding: 0.5625rem 1.125rem; /* HD: 0.375rem * 1.5, 0.75rem * 1.5 */
 }
 
 section .list-group-item {
-  font-size: 14px;
-  padding: 0.5rem 1rem;
+  font-size: 21px; /* HD: 14px * 1.5 */
+  padding: 0.75rem 1.5rem; /* HD: 0.5rem * 1.5, 1rem * 1.5 */
 }
