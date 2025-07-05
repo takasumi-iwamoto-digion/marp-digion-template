@@ -135,42 +135,73 @@ ul li::marker {
 section.end {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image5.jpg?raw=true');
   background-position: left bottom;
   background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 0;
 }
 
-section.end::before {
-  content: '';
+/* 最終スライドのロゴ */
+section.end > img.logo {
   position: absolute;
-  top: 30px;
-  right: 50px;
-  width: 150px;
-  height: 50px;
-  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image1.jpg?raw=true');
-  background-size: contain;
-  background-repeat: no-repeat;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: auto;
 }
 
-section.end .addresses {
+/* 会社情報コンテナ */
+section.end .company-info {
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  right: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 50px;
   width: 100%;
-  margin-top: 50px;
+  box-sizing: border-box;
 }
 
-section.end .address {
-  text-align: center;
-  font-size: 14px;
+section.end .info-column {
+  flex: 1;
+  font-size: 11px;
   color: #666666;
+  line-height: 1.6;
+  padding: 0 10px;
 }
 
-section.end .address h3 {
-  font-size: 16px;
+section.end .info-column h3 {
+  font-size: 12px;
   color: #333333;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+section.end .info-column p {
+  margin: 0;
+}
+
+/* 最下部のURL */
+section.end .footer-url {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font-size: 10px;
+  color: #999999;
+}
+
+/* コピーライト */
+section.end .copyright {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  font-size: 10px;
+  color: #999999;
 }
 
 /* ページ番号 */
