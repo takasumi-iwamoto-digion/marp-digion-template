@@ -34,7 +34,7 @@ paginate: true
 
 <div style="display: flex; align-items: center; gap: 40px;">
   <div style="flex: 1;">
-    <img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['1月','2月','3月','4月','5月'],datasets:[{label:'ユーザー数',data:[12000,13500,15200,16800,19320],backgroundColor:'%23E60012'}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}}" style="width: 100%;">
+    <img src="./assets/charts/monthly-users.png" style="width: 100%; max-width: 450px;">
   </div>
   <div style="flex: 1;">
     <ul style="font-size: 20px;">
@@ -54,10 +54,10 @@ paginate: true
   <div style="text-align: center;">
     <div style="display: flex; justify-content: center; gap: 40px; margin: 20px 0;">
       <div>
-        <img src="https://quickchart.io/chart?c={type:'doughnut',data:{labels:['プロダクトA','プロダクトB','プロダクトC'],datasets:[{data:[45,35,20],backgroundColor:['%23E60012','%23666666','%23999999']}]},options:{plugins:{title:{display:true,text:'2024 Q1'}}}}" style="width: 250px;">
+        <img src="./assets/charts/sales-q1.png" style="width: 200px;">
       </div>
       <div>
-        <img src="https://quickchart.io/chart?c={type:'doughnut',data:{labels:['プロダクトA','プロダクトB','プロダクトC'],datasets:[{data:[52,30,18],backgroundColor:['%23E60012','%23666666','%23999999']}]},options:{plugins:{title:{display:true,text:'2024 Q2'}}}}" style="width: 250px;">
+        <img src="./assets/charts/sales-q2.png" style="width: 200px;">
       </div>
     </div>
   </div>
@@ -87,12 +87,12 @@ paginate: true
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
   <div>
     <h3 style="font-size: 24px; color: #E60012;">売上高（億円）</h3>
-    <img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['Q1','Q2','Q3','Q4'],datasets:[{label:'売上高',data:[120,140,165,180],backgroundColor:'%23E60012'}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}}" style="width: 100%;">
+    <img src="./assets/charts/revenue.png" style="width: 100%; max-width: 350px;">
     <p style="font-size: 16px; margin-top: 10px;">前年同期比 <strong>+23%</strong></p>
   </div>
   <div>
     <h3 style="font-size: 24px; color: #E60012;">営業利益（億円）</h3>
-    <img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['Q1','Q2','Q3','Q4'],datasets:[{label:'営業利益',data:[20,25,30,35],backgroundColor:'%23666666'}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}}" style="width: 100%;">
+    <img src="./assets/charts/profit.png" style="width: 100%; max-width: 350px;">
     <p style="font-size: 16px; margin-top: 10px;">前年同期比 <strong>+35%</strong></p>
   </div>
 </div>
@@ -103,7 +103,7 @@ paginate: true
 
 <div style="display: flex; gap: 30px; align-items: flex-start;">
   <div style="flex: 1.5;">
-    <img src="https://quickchart.io/chart?c={type:'horizontalBar',data:{labels:['UI/UX','機能の充実度','サポート対応','価格満足度','総合評価'],datasets:[{label:'スコア',data:[4.2,4.5,4.8,3.8,4.3],backgroundColor:['%23E60012','%23E60012','%23E60012','%23666666','%23E60012']}]},options:{plugins:{legend:{display:false}},scales:{x:{min:0,max:5}}}}" style="width: 100%;">
+    <img src="./assets/charts/satisfaction.png" style="width: 100%; max-width: 400px;">
   </div>
   <div style="flex: 1; background-color: #f8f8f8; padding: 20px; border-radius: 8px;">
     <h3 style="font-size: 20px; margin-top: 0;">主な改善ポイント</h3>
@@ -123,7 +123,7 @@ paginate: true
 ## 市場シェア分析
 
 <div style="text-align: center;">
-  <img src="https://quickchart.io/chart?c={type:'line',data:{labels:['2020','2021','2022','2023','2024'],datasets:[{label:'当社',data:[15,18,22,25,28.5],borderColor:'%23E60012',backgroundColor:'transparent',borderWidth:3},{label:'競合A',data:[13,13.5,14.5,20,24.2],borderColor:'%23666666',backgroundColor:'transparent',borderWidth:3},{label:'競合B',data:[10,10.5,11,15,18.7],borderColor:'%23999999',backgroundColor:'transparent',borderWidth:3}]},options:{scales:{y:{beginAtZero:true,max:30}}}}" style="width: 90%; max-width: 800px;">
+  <img src="./assets/charts/market-share.png" style="width: 90%; max-width: 600px;">
   
   <div style="display: flex; justify-content: center; gap: 40px; font-size: 18px; margin-top: 20px;">
     <div style="display: flex; align-items: center; gap: 10px;">
