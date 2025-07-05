@@ -1,5 +1,7 @@
 # クイックスタートガイド
 
+DigiOnテーマを使ってプレゼンテーションを素早く作成する方法
+
 ## 1. 新しいプレゼンテーションの作成
 
 新規ファイル（例：`my-presentation.md`）を作成し、以下を記述：
@@ -7,13 +9,35 @@
 ```yaml
 ---
 marp: true
-theme: ./marp-custom-fixed.css
+theme: digion
 ---
 
+<!-- _class: title -->
+<!-- _paginate: false -->
+
 # プレゼンテーションタイトル
+サブタイトル
+
+<div class="date">2025年1月15日</div>
+<div class="info">資料種別：社内資料</div>
+<div class="version">Ver.1.0</div>
+<div class="company">株式会社DigiOn</div>
 ```
 
-## 2. プレビュー方法
+## 2. VS Code設定（初回のみ）
+
+VS Codeの設定に以下を追加：
+
+```json
+{
+  "markdown.marp.themes": [
+    "./marp-custom-fixed.css"
+  ],
+  "markdown.marp.enableHtml": true
+}
+```
+
+## 3. プレビュー方法
 
 ### VS Code
 1. ファイルを開く
@@ -24,7 +48,7 @@ theme: ./marp-custom-fixed.css
 marp -s my-presentation.md
 ```
 
-## 3. 出力方法
+## 4. 出力方法
 
 ```bash
 # HTML
@@ -40,6 +64,55 @@ marp --allow-local-files --images png my-presentation.md
 marp --allow-local-files --pptx my-presentation.md
 ```
 
+## 5. スライドクラスの使い方
+
+### 通常スライド（デフォルト）
+```markdown
+---
+
+## スライドタイトル
+
+- 箇条書き項目1
+- 箇条書き項目2
+- 箇条書き項目3
+```
+
+### 見出しスライド
+```markdown
+---
+
+<!-- _class: headline -->
+<!-- _paginate: false -->
+
+## 大見出し
+```
+
+### 画像レイアウト
+```markdown
+---
+
+![bg left:40%](./images/image3.jpg)
+
+## 左画像レイアウト
+内容
+```
+
+### 最終スライド
+```markdown
+---
+
+<!-- _class: end -->
+<!-- _paginate: false -->
+
+<div class="company-info">
+  <div class="col1"></div>
+  <div class="col2"></div>
+  <div class="col3"></div>
+  <div class="col4"></div>
+  <div class="col5"></div>
+</div>
+```
+
 ## それだけです！
 
-パスの問題に悩む必要はもうありません。すべての環境で同じパス（`./marp-custom-fixed.css`）が使えます。
+テーマ名は`digion`です。すべての環境で同じ設定が使えます。
