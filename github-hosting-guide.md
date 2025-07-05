@@ -28,10 +28,9 @@ style: |
 # 単一ファイルの変換
 marp --theme https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css slide.md
 
-# 複数テーマの登録
+# テーマの登録
 marp --theme-set \
   https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css \
-  https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fullhd.css \
   slide.md
 ```
 
@@ -40,7 +39,6 @@ marp --theme-set \
 ```yaml
 themeSet:
   - https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css
-  - https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fullhd.css
 ```
 
 ### 方法4: package.jsonでの設定
@@ -49,8 +47,7 @@ themeSet:
 {
   "marp": {
     "themeSet": [
-      "https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css",
-      "https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fullhd.css"
+      "https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css"
     ]
   }
 }

@@ -1,38 +1,50 @@
 # サンプルプレゼンテーション
 
-このディレクトリには、GitHub経由でDigiOnカスタムテーマを適用したMarpプレゼンテーションのサンプルが含まれています。
+このディレクトリには、DigiOnカスタムテーマを適用したMarpプレゼンテーションのサンプルが含まれています。**GitHub版（本番用）**と**ローカル版（開発用）**の両方を用意しています。
 
 ## サンプルファイル
 
-### 1. basic-presentation.md
+### GitHub版（本番用）- インターネット接続必要
+
+#### 1. basic-presentation-github.md
 - 基本的なプレゼンテーションの例
 - HD解像度（1280×720）
-- GitHub経由でのテーマ読み込み方法を説明
+- GitHub経由でのテーマ読み込み
 
-### 2. fullhd-presentation.md
-- FullHD解像度（1920×1080）のサンプル
-- 大型ディスプレイ向けの高解像度版
-- HD版との違いを説明
-
-### 3. advanced-features.md
+#### 2. advanced-features-github.md
 - Marpの高度な機能を活用した例
-- トランジション効果
-- フラグメント化されたリスト
-- 複数背景、コードブロック、テーブル、数式
+- トランジション効果、フラグメント化されたリスト等
+
+### ローカル版（開発用）- オフライン対応
+
+#### 1. basic-presentation-local.md
+- 基本的なプレゼンテーションの例（ローカルCSS使用）
+- 開発・テスト用
+
+#### 2. advanced-features-local.md
+- 高度な機能のデモ（ローカルCSS使用）
+- カスタマイズ実験用
 
 ## 使用方法
 
 ### 1. プレビュー（サーバーモード）
 
+#### GitHub版（本番確認用）
 ```bash
-# 基本的なプレゼンテーションをプレビュー
-marp -s basic-presentation.md
+# 基本的なプレゼンテーション
+marp -s basic-presentation-github.md
 
-# FullHD版をプレビュー
-marp -s fullhd-presentation.md
+# 高度な機能のデモ
+marp -s advanced-features-github.md
+```
 
-# 高度な機能のデモをプレビュー
-marp -s advanced-features.md
+#### ローカル版（開発用）
+```bash
+# ウォッチモードで起動（CSS変更が即反映）
+marp -w -s basic-presentation-local.md
+
+# 全ファイルを監視
+marp -w -s .
 ```
 
 ### 2. HTML出力
@@ -59,33 +71,46 @@ marp --pdf --pdf-outlines basic-presentation.md
 marp --pptx basic-presentation.md -o basic-presentation.pptx
 ```
 
-## 注意事項
+## GitHub版とローカル版の使い分け
 
-### インターネット接続が必要
-これらのサンプルはGitHub経由でテーマを読み込むため、インターネット接続が必要です。
+### GitHub版を使用する場合
+- **本番プレゼンテーション**：最終的な発表時
+- **チーム共有**：URLを共有するだけで利用可能
+- **配布資料**：常に最新版のテーマを適用
 
-### オフライン使用の場合
-オフラインで使用する場合は、以下のようにローカルテーマを参照してください：
+### ローカル版を使用する場合
+- **テーマ開発**：CSSの編集・カスタマイズ時
+- **オフライン環境**：インターネット接続がない場所
+- **高速プレビュー**：ネットワーク遅延なし
 
-```yaml
----
-marp: true
-theme: ../assets/marp-custom-fixed.css
----
-```
+## 開発ワークフロー
+
+1. **開発フェーズ**
+   - ローカル版でCSSを編集
+   - ウォッチモードで変更を確認
+   ```bash
+   marp -w -s advanced-features-local.md
+   ```
+
+2. **テストフェーズ**
+   - 編集したCSSの動作確認
+   - 複数の解像度でテスト
+
+3. **デプロイフェーズ**
+   - GitHubへプッシュ
+   - GitHub版で最終確認
+   ```bash
+   marp -s advanced-features-github.md
+   ```
 
 ## カスタマイズ
 
 ### テーマの切り替え
 
 ```yaml
-# HD版（標準）
+# HD版（1280×720）
 style: |
   @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css');
-
-# FullHD版
-style: |
-  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fullhd.css');
 ```
 
 ### トランジション効果

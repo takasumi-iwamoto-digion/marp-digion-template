@@ -34,17 +34,17 @@ marp-digion-template/
 ├── assets/
 │   ├── marp-custom.css         # オリジナルのカスタムテーマ
 │   ├── marp-custom-fixed.css   # 修正版テーマ（HD: 1280×720）
-│   ├── marp-custom-fullhd.css  # FullHD版テーマ（1920×1080）
 │   ├── image1.png              # DigiOnロゴ
 │   ├── image2.png              # CONFIDENTIAL表記
 │   ├── image3.jpg              # 背景画像
 │   ├── image4.jpg              # タイトルスライド背景
 │   └── image5.jpg              # 最終スライド背景
 ├── sample/
-│   ├── basic-presentation.md   # 基本的な使用例
-│   ├── fullhd-presentation.md  # FullHD版の使用例
-│   ├── advanced-features.md    # 高度な機能の使用例
-│   └── README.md               # サンプルの説明
+│   ├── basic-presentation-github.md   # 基本的な使用例（GitHub版）
+│   ├── basic-presentation-local.md    # 基本的な使用例（ローカル版）
+│   ├── advanced-features-github.md    # 高度な機能の使用例（GitHub版）
+│   ├── advanced-features-local.md     # 高度な機能の使用例（ローカル版）
+│   └── README.md                      # サンプルの説明
 ├── .marprc.yml                 # Marp CLI設定ファイル
 └── README.md                   # このファイル
 ```
