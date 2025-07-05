@@ -32,12 +32,12 @@ paginate: true
 
 ## 月間アクティブユーザー数推移
 
-<div style="display: flex; align-items: flex-start; gap: 20px;">
-  <div style="flex: 0 0 450px;">
-    <img src="./assets/charts/monthly-users.png" style="width: 100%;">
+<div style="display: flex; align-items: center; gap: 20px; margin-top: 20px;">
+  <div style="flex: 0 0 50%; display: flex; justify-content: flex-end; padding-right: 20px;">
+    <img src="./assets/charts/monthly-users-vertical.png" style="height: 380px;">
   </div>
-  <div style="flex: 1; padding-top: 40px;">
-    <ul style="font-size: 22px; line-height: 1.8;">
+  <div style="flex: 0 0 50%; padding-left: 20px;">
+    <ul style="font-size: 22px; line-height: 2.2; margin: 0;">
       <li><strong>前月比15%増加</strong></li>
       <li>新機能リリースの効果が顕著</li>
       <li>特に20-30代の利用が活発化</li>
