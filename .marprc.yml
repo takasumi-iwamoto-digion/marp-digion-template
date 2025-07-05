@@ -1,8 +1,8 @@
 # Marp CLI設定ファイル
-# GitHub経由でテーマを参照
 
 themeSet:
-  - https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css
+  - ./marp-custom-fixed.css
+  - https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/marp-custom-fixed.css
 
 # デフォルトオプション
 options:

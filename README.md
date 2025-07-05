@@ -8,17 +8,18 @@ DigiOn向けのMarpプレゼンテーション用カスタムテーマです。
 
 ## クイックスタート
 
-GitHub経由で直接テーマを使用できます（ローカルファイル不要）：
+シンプルな構成で、すぐに使い始められます：
 
 ```yaml
 ---
 marp: true
-style: |
-  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css');
+theme: ./marp-custom-fixed.css
 ---
 
 # プレゼンテーションタイトル
 ```
+
+VS Code、Marp CLI、どちらでも同じパスで動作します。
 
 ## 特徴
 
@@ -31,44 +32,45 @@ style: |
 
 ```
 marp-digion-template/
-├── assets/
-│   ├── marp-custom.css         # オリジナルのカスタムテーマ
-│   ├── marp-custom-fixed.css   # 修正版テーマ（HD: 1280×720）
+├── marp-custom-fixed.css        # カスタムテーマ（HD: 1280×720）
+├── basic-presentation.md        # 基本的な使用例（ローカル版）
+├── basic-presentation-github.md # GitHub経由版の使用例
+├── images/                      # 画像ディレクトリ
 │   ├── image1.png              # DigiOnロゴ
 │   ├── image2.png              # CONFIDENTIAL表記
 │   ├── image3.jpg              # 背景画像
 │   ├── image4.jpg              # タイトルスライド背景
 │   └── image5.jpg              # 最終スライド背景
-├── sample/
-│   ├── basic-presentation-github.md   # 基本的な使用例（GitHub版）
-│   ├── basic-presentation-local.md    # 基本的な使用例（ローカル版）
-│   ├── advanced-features-github.md    # 高度な機能の使用例（GitHub版）
-│   ├── advanced-features-local.md     # 高度な機能の使用例（ローカル版）
-│   └── README.md                      # サンプルの説明
-├── .marprc.yml                 # Marp CLI設定ファイル
-└── README.md                   # このファイル
+├── docs/                        # ドキュメント
+│   ├── github-hosting-guide.md
+│   ├── vscode-setup-guide.md
+│   └── ...
+├── .vscode/                     # VS Code設定
+│   └── settings.json
+├── .marprc.yml                  # Marp CLI設定ファイル
+└── README.md                    # このファイル
 ```
 
 ## 使用方法
 
 ### 1. テーマの適用
 
-#### 方法A: GitHub経由（推奨）
+#### 方法A: ローカル版（開発・オフライン用）
+
+```yaml
+---
+marp: true
+theme: ./marp-custom-fixed.css
+---
+```
+
+#### 方法B: GitHub経由（配布・共有用）
 
 ```yaml
 ---
 marp: true
 style: |
-  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/marp-custom-fixed.css');
----
-```
-
-#### 方法B: ローカルファイル
-
-```yaml
----
-marp: true
-theme: ./assets/marp-custom-fixed.css
+  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/marp-custom-fixed.css');
 ---
 ```
 

@@ -24,7 +24,7 @@ section.title {
   justify-content: center;
   align-items: flex-start;
   padding: 50px 70px !important;
-  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image4.jpg?raw=true');
+  background-image: url('./images/image4.jpg');
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 50% auto;
@@ -38,7 +38,7 @@ section.title::before {
   left: 50px;
   width: 150px;
   height: 50px;
-  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image1.png?raw=true');
+  background-image: url('./images/image1.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -51,7 +51,7 @@ section.title::after {
   right: 50px;
   width: 150px;
   height: 50px;
-  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image2.png?raw=true');
+  background-image: url('./images/image2.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -152,7 +152,7 @@ section.end {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image5.jpg?raw=true');
+  background-image: url('./images/image5.jpg');
   background-position: left bottom;
   background-repeat: no-repeat;
 }
@@ -164,7 +164,7 @@ section.end::before {
   right: 50px;
   width: 150px;
   height: 50px;
-  background-image: url('https://github.com/takasumi-iwamoto-digion/assets/blob/main/image1.png?raw=true');
+  background-image: url('./images/image1.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
