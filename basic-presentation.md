@@ -32,12 +32,12 @@ paginate: true
 
 ## 月間アクティブユーザー数推移
 
-<div style="display: flex; align-items: center; gap: 40px;">
-  <div style="flex: 1;">
-    <img src="./assets/charts/monthly-users.png" style="width: 100%; max-width: 450px;">
+<div style="display: flex; align-items: flex-start; gap: 20px;">
+  <div style="flex: 0 0 450px;">
+    <img src="./assets/charts/monthly-users.png" style="width: 100%;">
   </div>
-  <div style="flex: 1;">
-    <ul style="font-size: 20px;">
+  <div style="flex: 1; padding-top: 40px;">
+    <ul style="font-size: 22px; line-height: 1.8;">
       <li><strong>前月比15%増加</strong></li>
       <li>新機能リリースの効果が顕著</li>
       <li>特に20-30代の利用が活発化</li>
@@ -50,32 +50,32 @@ paginate: true
 
 ## 売上構成比の変化
 
-<div style="display: flex; flex-direction: column; gap: 20px;">
-  <div style="text-align: center;">
-    <div style="display: flex; justify-content: center; gap: 40px; margin: 20px 0;">
-      <div>
-        <img src="./assets/charts/sales-q1.png" style="width: 200px;">
-      </div>
-      <div>
-        <img src="./assets/charts/sales-q2.png" style="width: 200px;">
-      </div>
+<div style="display: flex; justify-content: center; gap: 60px; align-items: center;">
+  <div>
+    <img src="./assets/charts/sales-q1.png" style="width: 220px;">
+  </div>
+  <div>
+    <img src="./assets/charts/sales-q2.png" style="width: 220px;">
+  </div>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 50px; margin-top: 30px; font-size: 20px;">
+  <div style="display: flex; align-items: center;">
+    <div style="width: 20px; height: 20px; background: #E60012; margin-right: 8px;"></div>
+    <div>
+      <strong>プロダクトA</strong>: 45% → 52% (+7pt)
     </div>
   </div>
-  <div style="display: flex; justify-content: space-around; font-size: 18px;">
+  <div style="display: flex; align-items: center;">
+    <div style="width: 20px; height: 20px; background: #666666; margin-right: 8px;"></div>
     <div>
-      <div style="display: inline-block; width: 15px; height: 15px; background: #E60012; margin-right: 5px;"></div>
-      <strong>プロダクトA</strong><br>
-      45% → 52% (+7pt)
+      <strong>プロダクトB</strong>: 35% → 30% (-5pt)
     </div>
+  </div>
+  <div style="display: flex; align-items: center;">
+    <div style="width: 20px; height: 20px; background: #999999; margin-right: 8px;"></div>
     <div>
-      <div style="display: inline-block; width: 15px; height: 15px; background: #666; margin-right: 5px;"></div>
-      <strong>プロダクトB</strong><br>
-      35% → 30% (-5pt)
-    </div>
-    <div>
-      <div style="display: inline-block; width: 15px; height: 15px; background: #999; margin-right: 5px;"></div>
-      <strong>プロダクトC</strong><br>
-      20% → 18% (-2pt)
+      <strong>プロダクトC</strong>: 20% → 18% (-2pt)
     </div>
   </div>
 </div>
@@ -84,16 +84,16 @@ paginate: true
 
 ## 四半期業績サマリー
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
-  <div>
-    <h3 style="font-size: 24px; color: #E60012;">売上高（億円）</h3>
-    <img src="./assets/charts/revenue.png" style="width: 100%; max-width: 350px;">
-    <p style="font-size: 16px; margin-top: 10px;">前年同期比 <strong>+23%</strong></p>
+<div style="display: flex; justify-content: center; gap: 50px;">
+  <div style="text-align: center;">
+    <h3 style="font-size: 22px; color: #E60012; margin-bottom: 15px;">売上高（億円）</h3>
+    <img src="./assets/charts/revenue.png" style="width: 280px;">
+    <p style="font-size: 18px; margin-top: 15px;">前年同期比 <strong>+23%</strong></p>
   </div>
-  <div>
-    <h3 style="font-size: 24px; color: #E60012;">営業利益（億円）</h3>
-    <img src="./assets/charts/profit.png" style="width: 100%; max-width: 350px;">
-    <p style="font-size: 16px; margin-top: 10px;">前年同期比 <strong>+35%</strong></p>
+  <div style="text-align: center;">
+    <h3 style="font-size: 22px; color: #E60012; margin-bottom: 15px;">営業利益（億円）</h3>
+    <img src="./assets/charts/profit.png" style="width: 280px;">
+    <p style="font-size: 18px; margin-top: 15px;">前年同期比 <strong>+35%</strong></p>
   </div>
 </div>
 
@@ -101,13 +101,13 @@ paginate: true
 
 ## ユーザー満足度調査結果
 
-<div style="display: flex; gap: 30px; align-items: flex-start;">
-  <div style="flex: 1.5;">
-    <img src="./assets/charts/satisfaction.png" style="width: 100%; max-width: 400px;">
+<div style="display: flex; gap: 30px; align-items: center;">
+  <div style="flex: 0 0 350px;">
+    <img src="./assets/charts/satisfaction.png" style="width: 100%;">
   </div>
   <div style="flex: 1; background-color: #f8f8f8; padding: 20px; border-radius: 8px;">
-    <h3 style="font-size: 20px; margin-top: 0;">主な改善ポイント</h3>
-    <ul style="font-size: 16px; line-height: 1.8;">
+    <h3 style="font-size: 20px; margin-top: 0; margin-bottom: 15px;">主な改善ポイント</h3>
+    <ul style="font-size: 17px; line-height: 1.8;">
       <li>レスポンスタイムの改善</li>
       <li>新機能のチュートリアル充実</li>
       <li>カスタマーサポート体制強化</li>
@@ -123,19 +123,19 @@ paginate: true
 ## 市場シェア分析
 
 <div style="text-align: center;">
-  <img src="./assets/charts/market-share.png" style="width: 90%; max-width: 600px;">
+  <img src="./assets/charts/market-share.png" style="width: 550px; margin: 0 auto;">
   
-  <div style="display: flex; justify-content: center; gap: 40px; font-size: 18px; margin-top: 20px;">
+  <div style="display: flex; justify-content: center; gap: 50px; font-size: 20px; margin-top: 25px;">
     <div style="display: flex; align-items: center; gap: 10px;">
-      <div style="width: 20px; height: 3px; background-color: #E60012;"></div>
+      <div style="width: 30px; height: 4px; background-color: #E60012;"></div>
       <span>当社: <strong>28.5%</strong></span>
     </div>
     <div style="display: flex; align-items: center; gap: 10px;">
-      <div style="width: 20px; height: 3px; background-color: #666;"></div>
+      <div style="width: 30px; height: 4px; background-color: #666666;"></div>
       <span>競合A: 24.2%</span>
     </div>
     <div style="display: flex; align-items: center; gap: 10px;">
-      <div style="width: 20px; height: 3px; background-color: #999;"></div>
+      <div style="width: 30px; height: 4px; background-color: #999999;"></div>
       <span>競合B: 18.7%</span>
     </div>
   </div>
