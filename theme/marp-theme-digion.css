@@ -34,7 +34,7 @@ section.title::before {
   left: 75px; /* HD: 50px * 1.5 */
   width: 225px; /* HD: 150px * 1.5 */
   height: 75px; /* HD: 50px * 1.5 */
-  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image1.png');
+  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -47,7 +47,7 @@ section.title > *:first-child::before {
   right: 75px; /* HD: 50px * 1.5 */
   width: 225px; /* HD: 150px * 1.5 */
   height: 75px; /* HD: 50px * 1.5 */
-  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image2.png');
+  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/confidential.png');
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 10;
@@ -59,7 +59,7 @@ section.title {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image4.jpg');
+  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/bg-title.jpg');
   background-position: right -75px center; /* HD: -50px * 1.5 */
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -152,7 +152,7 @@ section.end {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image5.jpg');
+  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/bg-end.jpg');
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -169,7 +169,7 @@ section.end::before {
   transform: translate(-50%, -50%);
   width: 300px; /* HD: 200px * 1.5 */
   height: 120px; /* HD: 80px * 1.5 */
-  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image1.png');
+  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -366,7 +366,7 @@ section.headline::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/images/image3.jpg');
+  background-image: url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/assets/bg-headline.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

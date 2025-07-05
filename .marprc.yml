@@ -1,8 +1,8 @@
 # Marp CLI設定ファイル
 
 themeSet:
-  - ./marp-theme-digion.css
-  - https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/marp-theme-digion.css
+  - ./theme/marp-theme-digion.css
+  - https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/theme/marp-theme-digion.css
 
 # デフォルトオプション
 options:

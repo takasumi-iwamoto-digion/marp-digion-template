@@ -1,6 +1,7 @@
 ---
 marp: true
-theme: digion
+style: |
+  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/theme/marp-theme-digion.css');
 transition: fade
 paginate: true
 html: true
@@ -222,7 +223,7 @@ html: true
 
 ---
 
-![bg left:40%](./images/image3.jpg)
+![bg left:40%](../assets/bg-headline.jpg)
 
 ## 左画像レイアウト（half-left）
 
@@ -236,7 +237,7 @@ html: true
 
 ---
 
-![bg right:40%](./images/image3.jpg)
+![bg right:40%](../assets/bg-headline.jpg)
 
 ## 右画像レイアウト（half-right）
 

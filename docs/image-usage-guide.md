@@ -51,15 +51,16 @@ GitHub版（`basic-presentation-github.md`）では、画像URLがGitHub経由�
 
 CSSファイル内の画像パス：
 ```css
-background-image: url('./images/image1.png');
+background-image: url('../assets/logo.png');
 ```
 
 画像ファイルの配置：
 ```
 marp-digion-template/
-├── marp-theme-digion.css
-├── images/
-│   ├── image1.png
+├── theme/
+│   └── marp-theme-digion.css
+├── assets/
+│   ├── logo.png
 │   └── ...
 ```
 

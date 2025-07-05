@@ -1,4 +1,30 @@
+# Generated files
+*.pdf
+*.pptx
+*.html
+
+# Generated screenshots
+examples/*.png
+
+# Dependencies
 node_modules/
 package-lock.json
-package.json
+
+# Python virtual environment
 venv/
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+~*

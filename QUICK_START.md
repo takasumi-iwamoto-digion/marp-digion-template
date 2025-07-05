@@ -10,7 +10,7 @@ DigiOnテーマを使ってプレゼンテーションを素早く作成する�
 ---
 marp: true
 style: |
-  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/marp-theme-digion.css');
+  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/theme/marp-theme-digion.css');
 ---
 
 <!-- _class: title -->
@@ -32,7 +32,7 @@ VS Codeの設定に以下を追加：
 ```json
 {
   "markdown.marp.themes": [
-    "./marp-theme-digion.css"
+    "./theme/marp-theme-digion.css"
   ],
   "markdown.marp.enableHtml": true
 }
@@ -92,7 +92,7 @@ marp --allow-local-files --pptx my-presentation.md
 ```markdown
 ---
 
-![bg left:40%](./images/image3.jpg)
+![bg left:40%](./assets/bg-headline.jpg)
 
 ## 左画像レイアウト
 内容

@@ -36,41 +36,38 @@ VS Code、Marp CLI、どちらでも同じパスで動作します。
 
 ```
 marp-digion-template/
-├── marp-theme-digion.css        # カスタムテーマ（HD: 1280×720）
-├── basic-presentation.md        # 基本的な使用例（高度なレイアウト例を含む）
-├── images/                      # 画像ディレクトリ
-│   ├── image1.png              # DigiOnロゴ
-│   ├── image2.png              # CONFIDENTIAL表記
-│   ├── image3.jpg              # 背景画像
-│   ├── image4.jpg              # タイトルスライド背景
-│   └── image5.jpg              # 最終スライド背景
-├── docs/                        # ドキュメント
-│   ├── github-hosting-guide.md
-│   ├── vscode-setup-guide.md
-│   ├── column-layouts.md        # カラムレイアウトガイド
-│   ├── quickchart-usage.md      # QuickChart.io使用ガイド
-│   └── ...
-├── target/                      # デザイン目標となるテンプレート画像
-│   ├── DigiOn-Template-title.png      # タイトルスライド
-│   ├── DigiOn-Template-default.png    # 通常スライド
-│   ├── DigiOn-Template-headline.png   # 見出しスライド
-│   ├── DigiOn-Template-half-left.png  # 左画像配置
-│   ├── DigiOn-Template-half-right.png # 右画像配置
-│   └── DigiOn-Template-last.png       # 最終スライド
-├── examples/                    # 生成されたスライドの例
-│   ├── basic-presentation.001.png     # タイトルスライド
-│   ├── basic-presentation.002.png     # 通常スライド（特徴説明）
-│   ├── basic-presentation.009.png     # 見出しスライド
-│   ├── basic-presentation.010.png     # 左画像レイアウト
-│   ├── basic-presentation.003.png     # グラフ（月間ユーザー数）
-│   ├── basic-presentation.013.png     # コードブロック
-│   ├── basic-presentation.014.png     # テーブル
-│   ├── basic-presentation.015.png     # 2カラムレイアウト
-│   ├── basic-presentation.016.png     # 3カラムレイアウト
-│   ├── basic-presentation.018.png     # 最終スライド
-│   └── ...                            # その他のスライド
+├── README.md                    # メインドキュメント
 ├── QUICK_START.md               # クイックスタートガイド
-└── README.md                    # このファイル
+├── theme/                       # テーマ関連ファイル
+│   └── marp-theme-digion.css   # カスタムテーマ（FHD: 1920×1080）
+├── assets/                      # 静的リソース
+│   ├── logo.png                # DigiOnロゴ
+│   ├── confidential.png        # CONFIDENTIAL表記
+│   ├── bg-headline.jpg         # 見出し背景
+│   ├── bg-title.jpg            # タイトル背景
+│   └── bg-end.jpg              # 最終スライド背景
+├── examples/                    # サンプルプレゼンテーション
+│   ├── basic-presentation.md   # 基本サンプル
+│   ├── bootstrap-integration.md # Bootstrap統合例
+│   └── tailwind-integration.md  # Tailwind統合例
+├── docs/                        # 技術ドキュメント
+│   ├── column-layouts.md       # カラムレイアウトガイド
+│   ├── css-framework-integration.md # CSSフレームワーク統合
+│   ├── image-usage-guide.md    # 画像使用ガイド
+│   ├── layout-comparison.md    # レイアウト手法比較
+│   └── quickchart-usage.md     # QuickChart.io使用ガイド
+├── design-specs/                # デザイン仕様
+│   ├── template-title.png      # タイトルスライド
+│   ├── template-default.png    # 通常スライド
+│   ├── template-headline.png   # 見出しスライド
+│   ├── template-half-left.png  # 左画像配置
+│   ├── template-half-right.png # 右画像配置
+│   └── template-last.png       # 最終スライド
+├── .marprc.yml                  # Marp設定
+├── .vscode/                     # VS Code設定
+│   └── settings.json
+├── package.json                 # npm設定
+└── package-lock.json
 ```
 
 ## VS Code初期設定
@@ -89,7 +86,7 @@ VS Codeの設定（`Ctrl+,` または `Cmd+,`）を開き、以下を追加：
 ```json
 {
   "markdown.marp.themes": [
-    "./marp-theme-digion.css"
+    "./theme/marp-theme-digion.css"
   ],
   "markdown.marp.enableHtml": true
 }
@@ -110,7 +107,7 @@ VS Codeの設定（`Ctrl+,` または `Cmd+,`）を開き、以下を追加：
 ---
 marp: true
 style: |
-  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/marp-theme-digion.css');
+  @import url('https://raw.githubusercontent.com/takasumi-iwamoto-digion/marp-digion-template/main/theme/marp-theme-digion.css');
 ---
 ```
 
@@ -156,7 +153,7 @@ style: |
 
 左側に画像：
 ```markdown
-![bg left:40%](./images/image3.jpg)
+![bg left:40%](./assets/bg-headline.jpg)
 
 ## タイトル
 内容
@@ -164,7 +161,7 @@ style: |
 
 右側に画像：
 ```markdown
-![bg right:40%](./images/image3.jpg)
+![bg right:40%](./assets/bg-headline.jpg)
 
 ## タイトル
 内容
