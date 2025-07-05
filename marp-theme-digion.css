@@ -411,3 +411,78 @@ section.end[data-marpit-pagination]::after,
 section.headline[data-marpit-pagination]::after {
   content: none !important;
 }
+
+/* カラムレイアウト用クラス */
+section .columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+section .columns-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+section .columns-auto {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+/* 列の幅を指定できるクラス */
+section .columns-40-60 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+section .columns-60-40 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+/* Flexboxアプローチ */
+section .flex-columns {
+  display: flex;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+section .flex-columns > * {
+  flex: 1;
+}
+
+/* 垂直方向の分割 */
+section .rows {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  height: calc(100% - 100px);
+}
+
+/* レガシーcolumn-countアプローチ（互換性のため） */
+section .twocols {
+  margin-top: 2rem;
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+section .threecols {
+  margin-top: 2rem;
+  column-count: 3;
+  column-gap: 1.5rem;
+}

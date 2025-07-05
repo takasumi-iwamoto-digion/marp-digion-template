@@ -32,90 +32,101 @@ paginate: true
 
 ## 月間アクティブユーザー数推移
 
-<div style="display: flex; align-items: center; gap: 20px; margin-top: 20px;">
-  <div style="flex: 0 0 50%; display: flex; justify-content: flex-end; padding-right: 20px;">
-    <img src="./assets/charts/monthly-users-vertical.png" style="height: 380px;">
-  </div>
-  <div style="flex: 0 0 50%; padding-left: 20px;">
-    <ul style="font-size: 22px; line-height: 2.2; margin: 0;">
-      <li><strong>前月比15%増加</strong></li>
-      <li>新機能リリースの効果が顕著</li>
-      <li>特に20-30代の利用が活発化</li>
-      <li>継続率も5ポイント改善</li>
-    </ul>
-  </div>
+<div class="columns">
+<div>
+
+- **前月比15%増加**
+- 新機能リリースの効果が顕著
+- 特に20-30代の利用が活発化
+- 継続率も5ポイント改善
+
+</div>
+<div>
+
+![width:350px](https://quickchart.io/chart?w=350&h=300&c={type:'bar',data:{labels:['7月','8月','9月','10月','11月','12月'],datasets:[{label:'アクティブユーザー数（万人）',data:[45,52,58,65,72,83],backgroundColor:'%23E60012',borderColor:'%23E60012',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,scales:{y:{beginAtZero:true,grid:{color:'rgba(0,0,0,0.1)'}},x:{grid:{display:false}}},plugins:{legend:{display:false}}}})
+
+</div>
 </div>
 
 ---
 
 ## 売上構成比の変化
 
-<div style="display: flex; justify-content: center; gap: 60px; align-items: center;">
-  <div>
-    <img src="./assets/charts/sales-q1.png" style="width: 220px;">
-  </div>
-  <div>
-    <img src="./assets/charts/sales-q2.png" style="width: 220px;">
-  </div>
+<div class="columns">
+<div style="text-align: center;">
+
+![width:220px](https://quickchart.io/chart?w=300&h=300&c={type:'pie',data:{labels:['プロダクトA','プロダクトB','プロダクトC'],datasets:[{data:[45,35,20],backgroundColor:['%23E60012','%23666666','%23999999']}]},options:{plugins:{legend:{display:false}}}})
+
+### Q1
+
+</div>
+<div style="text-align: center;">
+
+![width:220px](https://quickchart.io/chart?w=300&h=300&c={type:'pie',data:{labels:['プロダクトA','プロダクトB','プロダクトC'],datasets:[{data:[52,30,18],backgroundColor:['%23E60012','%23666666','%23999999']}]},options:{plugins:{legend:{display:false}}}})
+
+### Q2
+
+</div>
 </div>
 
-<div style="display: flex; justify-content: center; gap: 50px; margin-top: 30px; font-size: 20px;">
-  <div style="display: flex; align-items: center;">
-    <div style="width: 20px; height: 20px; background: #E60012; margin-right: 8px;"></div>
-    <div>
-      <strong>プロダクトA</strong>: 45% → 52% (+7pt)
-    </div>
-  </div>
-  <div style="display: flex; align-items: center;">
-    <div style="width: 20px; height: 20px; background: #666666; margin-right: 8px;"></div>
-    <div>
-      <strong>プロダクトB</strong>: 35% → 30% (-5pt)
-    </div>
-  </div>
-  <div style="display: flex; align-items: center;">
-    <div style="width: 20px; height: 20px; background: #999999; margin-right: 8px;"></div>
-    <div>
-      <strong>プロダクトC</strong>: 20% → 18% (-2pt)
-    </div>
-  </div>
+<div style="margin-top: 30px; text-align: center;">
+  <span style="display: inline-block; margin: 0 20px;">
+    <span style="display: inline-block; width: 20px; height: 20px; background: #E60012; vertical-align: middle;"></span>
+    <strong>プロダクトA</strong>: 45% → 52% (+7pt)
+  </span>
+  <span style="display: inline-block; margin: 0 20px;">
+    <span style="display: inline-block; width: 20px; height: 20px; background: #666666; vertical-align: middle;"></span>
+    <strong>プロダクトB</strong>: 35% → 30% (-5pt)
+  </span>
+  <span style="display: inline-block; margin: 0 20px;">
+    <span style="display: inline-block; width: 20px; height: 20px; background: #999999; vertical-align: middle;"></span>
+    <strong>プロダクトC</strong>: 20% → 18% (-2pt)
+  </span>
 </div>
 
 ---
 
 ## 四半期業績サマリー
 
-<div style="display: flex; justify-content: center; gap: 50px;">
-  <div style="text-align: center;">
-    <h3 style="font-size: 22px; color: #E60012; margin-bottom: 15px;">売上高（億円）</h3>
-    <img src="./assets/charts/revenue.png" style="width: 280px;">
-    <p style="font-size: 18px; margin-top: 15px;">前年同期比 <strong>+23%</strong></p>
-  </div>
-  <div style="text-align: center;">
-    <h3 style="font-size: 22px; color: #E60012; margin-bottom: 15px;">営業利益（億円）</h3>
-    <img src="./assets/charts/profit.png" style="width: 280px;">
-    <p style="font-size: 18px; margin-top: 15px;">前年同期比 <strong>+35%</strong></p>
-  </div>
+<div class="columns">
+<div style="text-align: center;">
+
+### 売上高（億円）
+![width:280px](https://quickchart.io/chart?w=350&h=250&c={type:'line',data:{labels:['Q1','Q2','Q3','Q4'],datasets:[{label:'売上高',data:[320,350,385,410],borderColor:'%23E60012',backgroundColor:'rgba(230,0,18,0.1)',fill:true,tension:0.3}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:false,min:300}}}})
+
+前年同期比 **+23%**
+
+</div>
+<div style="text-align: center;">
+
+### 営業利益（億円）
+![width:280px](https://quickchart.io/chart?w=350&h=250&c={type:'line',data:{labels:['Q1','Q2','Q3','Q4'],datasets:[{label:'営業利益',data:[45,52,61,72],borderColor:'%23E60012',backgroundColor:'rgba(230,0,18,0.1)',fill:true,tension:0.3}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:false,min:40}}}})
+
+前年同期比 **+35%**
+
+</div>
 </div>
 
 ---
 
 ## ユーザー満足度調査結果
 
-<div style="display: flex; gap: 30px; align-items: center;">
-  <div style="flex: 0 0 350px;">
-    <img src="./assets/charts/satisfaction.png" style="width: 100%;">
-  </div>
-  <div style="flex: 1; background-color: #f8f8f8; padding: 20px; border-radius: 8px;">
-    <h3 style="font-size: 20px; margin-top: 0; margin-bottom: 15px;">主な改善ポイント</h3>
-    <ul style="font-size: 17px; line-height: 1.8;">
-      <li>レスポンスタイムの改善</li>
-      <li>新機能のチュートリアル充実</li>
-      <li>カスタマーサポート体制強化</li>
-    </ul>
-    <p style="font-size: 14px; color: #666; margin-top: 15px;">
-      ※ n=1,234 / 調査期間: 2024年12月
-    </p>
-  </div>
+<div class="columns">
+<div>
+
+![width:100%](https://quickchart.io/chart?w=300&h=250&c={type:'doughnut',data:{labels:['非常に満足','満足','普通','不満','非常に不満'],datasets:[{data:[35,40,18,5,2],backgroundColor:['%23E60012','%23FF6666','%23CCCCCC','%23999999','%23666666']}]},options:{plugins:{legend:{position:'bottom',labels:{boxWidth:12,padding:10}}}}})
+
+</div>
+<div style="background-color: #f8f8f8; padding: 20px; border-radius: 8px;">
+
+### 主な改善ポイント
+- レスポンスタイムの改善
+- 新機能のチュートリアル充実
+- カスタマーサポート体制強化
+
+<small style="color: #666;">※ n=1,234 / 調査期間: 2024年12月</small>
+
+</div>
 </div>
 
 ---
@@ -123,22 +134,30 @@ paginate: true
 ## 市場シェア分析
 
 <div style="text-align: center;">
-  <img src="./assets/charts/market-share.png" style="width: 550px; margin: 0 auto;">
-  
-  <div style="display: flex; justify-content: center; gap: 50px; font-size: 20px; margin-top: 25px;">
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <div style="width: 30px; height: 4px; background-color: #E60012;"></div>
-      <span>当社: <strong>28.5%</strong></span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <div style="width: 30px; height: 4px; background-color: #666666;"></div>
-      <span>競合A: 24.2%</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <div style="width: 30px; height: 4px; background-color: #999999;"></div>
-      <span>競合B: 18.7%</span>
-    </div>
-  </div>
+
+![width:550px](https://quickchart.io/chart?w=600&h=300&c={type:'line',data:{labels:['2022/Q1','2022/Q2','2022/Q3','2022/Q4','2023/Q1','2023/Q2','2023/Q3','2023/Q4','2024/Q1'],datasets:[{label:'当社',data:[22.3,23.1,24.2,25.0,25.8,26.5,27.2,27.9,28.5],borderColor:'%23E60012',borderWidth:3,tension:0.3},{label:'競合A',data:[26.5,26.2,25.8,25.5,25.2,24.9,24.6,24.4,24.2],borderColor:'%23666666',borderWidth:2,tension:0.3},{label:'競合B',data:[20.1,19.8,19.5,19.3,19.1,18.9,18.8,18.7,18.7],borderColor:'%23999999',borderWidth:2,tension:0.3}]},options:{scales:{y:{beginAtZero:false,min:15,max:30}},plugins:{legend:{display:false}}}})
+
+</div>
+
+<div class="columns-3" style="text-align: center; margin-top: 25px;">
+<div>
+
+<span style="display: inline-block; width: 30px; height: 4px; background-color: #E60012;"></span>  
+当社: **28.5%**
+
+</div>
+<div>
+
+<span style="display: inline-block; width: 30px; height: 4px; background-color: #666666;"></span>  
+競合A: 24.2%
+
+</div>
+<div>
+
+<span style="display: inline-block; width: 30px; height: 4px; background-color: #999999;"></span>  
+競合B: 18.7%
+
+</div>
 </div>
 
 ---
@@ -223,6 +242,82 @@ digion.initialize().then(() => {
 | DigiOn Video | Windows/Mac/Linux | 動画再生・編集 |
 | DigiOn Audio | iOS/Android | 音声処理・変換 |
 | DigiOn Stream | Web | ストリーミング配信 |
+
+---
+
+## 2カラムレイアウト（Grid）
+
+<div class="columns">
+<div>
+
+### 左カラム
+- Grid方式による2分割
+- レスポンシブ対応
+- 均等幅での表示
+
+</div>
+<div>
+
+### 右カラム
+- 画像やコードも配置可能
+- 見やすいレイアウト
+- コンテンツの整理に最適
+
+</div>
+</div>
+
+---
+
+## 3カラムレイアウト
+
+<div class="columns-3">
+<div>
+
+### 製品A
+- 高速処理
+- 安定性重視
+- 24時間稼働
+
+</div>
+<div>
+
+### 製品B
+- 使いやすさ
+- 多機能
+- カスタマイズ可能
+
+</div>
+<div>
+
+### 製品C
+- コストパフォーマンス
+- 軽量設計
+- モバイル対応
+
+</div>
+</div>
+
+---
+
+## 非対称レイアウト（40:60）
+
+<div class="columns-40-60">
+<div>
+
+### 概要
+当社の最新技術により、従来比3倍の処理速度を実現
+
+</div>
+<div>
+
+### 詳細説明
+- **処理速度**: 新アルゴリズムによる並列処理の最適化
+- **メモリ効率**: スマートキャッシュシステムの導入
+- **省電力**: AI駆動の電力管理システム
+- **互換性**: 既存システムとの完全互換を維持
+
+</div>
+</div>
 
 ---
 

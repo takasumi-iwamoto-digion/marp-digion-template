@@ -113,6 +113,36 @@ marp --theme marp-theme-digion.css --allow-local-files --pptx my-presentation.md
 </div>
 ```
 
+### カラムレイアウト
+```markdown
+---
+
+## 2カラムレイアウト
+
+<div class="columns">
+<div>
+
+### 左側
+- 内容1
+- 内容2
+
+</div>
+<div>
+
+### 右側
+- 内容A
+- 内容B
+
+</div>
+</div>
+```
+
+利用可能なレイアウト：
+- `columns` - 2カラム均等分割
+- `columns-3` - 3カラム均等分割
+- `columns-40-60` - 40:60の非対称分割
+- `columns-60-40` - 60:40の非対称分割
+
 ## それだけです！
 
 テーマ名は`digion`です。すべての環境で同じ設定が使えます。

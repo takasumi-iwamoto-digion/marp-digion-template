@@ -27,6 +27,8 @@ VS Code、Marp CLI、どちらでも同じパスで動作します。
 - **通常スライド**: 赤いアクセントカラーを使用した見出し
 - **見出しスライド**: 大きなテキストを中央に配置した強調表示
 - **画像レイアウト**: 左右に画像を配置可能
+- **カラムレイアウト**: 2カラム、3カラム、非対称分割など柔軟な列配置
+- **動的グラフ生成**: QuickChart.ioを使用したチャート表示
 - **最終スライド**: 会社情報表示用のレイアウト
 - **フォント**: Noto Sans JPを使用した読みやすいデザイン
 
@@ -45,6 +47,8 @@ marp-digion-template/
 ├── docs/                        # ドキュメント
 │   ├── github-hosting-guide.md
 │   ├── vscode-setup-guide.md
+│   ├── column-layouts.md        # カラムレイアウトガイド
+│   ├── quickchart-usage.md      # QuickChart.io使用ガイド
 │   └── ...
 ├── target/                      # デザイン目標となるテンプレート画像
 │   ├── DigiOn-Template-title.png      # タイトルスライド
@@ -58,9 +62,12 @@ marp-digion-template/
 │   ├── basic-presentation.002.png     # 通常スライド（特徴説明）
 │   ├── basic-presentation.009.png     # 見出しスライド
 │   ├── basic-presentation.010.png     # 左画像レイアウト
+│   ├── basic-presentation.003.png     # グラフ（月間ユーザー数）
 │   ├── basic-presentation.013.png     # コードブロック
 │   ├── basic-presentation.014.png     # テーブル
-│   ├── basic-presentation.015.png     # 最終スライド
+│   ├── basic-presentation.015.png     # 2カラムレイアウト
+│   ├── basic-presentation.016.png     # 3カラムレイアウト
+│   ├── basic-presentation.018.png     # 最終スライド
 │   └── ...                            # その他のスライド
 ├── QUICK_START.md               # クイックスタートガイド
 └── README.md                    # このファイル
@@ -214,6 +221,81 @@ const digion = new DigiOnSDK({
 | DigiOn Video | Windows/Mac/Linux | 動画再生・編集 |
 | DigiOn Audio | iOS/Android | 音声処理・変換 |
 ```
+
+#### カラムレイアウト
+
+コンテンツを複数列に分割して表示できます：
+
+2カラム（均等分割）：
+```markdown
+<div class="columns">
+<div>
+
+### 左側のコンテンツ
+- 項目1
+- 項目2
+
+</div>
+<div>
+
+### 右側のコンテンツ
+- 項目A
+- 項目B
+
+</div>
+</div>
+```
+
+3カラム：
+```markdown
+<div class="columns-3">
+<div>
+
+### 第1カラム
+内容1
+
+</div>
+<div>
+
+### 第2カラム
+内容2
+
+</div>
+<div>
+
+### 第3カラム
+内容3
+
+</div>
+</div>
+```
+
+非対称レイアウト（40:60）：
+```markdown
+<div class="columns-40-60">
+<div>狭い方（40%）</div>
+<div>広い方（60%）</div>
+</div>
+```
+
+利用可能なクラス：
+- `columns` - 2カラム均等分割
+- `columns-3` - 3カラム均等分割
+- `columns-40-60` - 40:60の非対称分割
+- `columns-60-40` - 60:40の非対称分割
+- `flex-columns` - Flexboxによる柔軟な分割
+- `rows` - 垂直2分割
+- `twocols` / `threecols` - column-countによるテキスト自動流し込み
+
+#### グラフ表示
+
+QuickChart.ioを使用して動的にグラフを生成できます：
+
+```markdown
+![width:400px](https://quickchart.io/chart?c={type:'bar',data:{labels:['1月','2月','3月'],datasets:[{label:'売上',data:[100,150,200],backgroundColor:'%23E60012'}]}})
+```
+
+詳細は[QuickChart使用ガイド](docs/quickchart-usage.md)を参照してください。
 
 ## 生成例
 
