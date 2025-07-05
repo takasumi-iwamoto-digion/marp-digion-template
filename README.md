@@ -264,11 +264,19 @@ CSSファイルを編集することで、以下の要素をカスタマイズ�
 
 ## 注意事項
 
+- **Marp CLIを使用する場合は `--theme marp-theme-digion.css` オプションが必要です**
+  ```bash
+  # プレビュー
+  marp -s --theme marp-theme-digion.css basic-presentation.md
+  
+  # PDF出力
+  marp --theme marp-theme-digion.css --pdf basic-presentation.md
+  ```
 - ローカル版では画像ファイルは`images/`ディレクトリから参照されます
 - **画像を含むPDF/PNG出力時は `--allow-local-files` オプションが必要です**
   ```bash
-  marp --allow-local-files --pdf basic-presentation.md
-  marp --allow-local-files --images png basic-presentation.md
+  marp --theme marp-theme-digion.css --allow-local-files --pdf basic-presentation.md
+  marp --theme marp-theme-digion.css --allow-local-files --images png basic-presentation.md
   ```
 - GitHub版を使用する場合は、インターネット接続が必要です
 - CONFIDENTIALマークが含まれているため、社外への公開時は注意してください

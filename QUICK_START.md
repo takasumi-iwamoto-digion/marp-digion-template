@@ -45,23 +45,23 @@ VS Codeの設定に以下を追加：
 
 ### Marp CLI
 ```bash
-marp -s my-presentation.md
+marp -s --theme marp-theme-digion.css my-presentation.md
 ```
 
 ## 4. 出力方法
 
 ```bash
 # HTML
-marp my-presentation.md
+marp --theme marp-theme-digion.css my-presentation.md
 
 # PDF（画像を含む場合）
-marp --allow-local-files --pdf my-presentation.md
+marp --theme marp-theme-digion.css --allow-local-files --pdf my-presentation.md
 
 # PNG画像（画像を含む場合）
-marp --allow-local-files --images png my-presentation.md
+marp --theme marp-theme-digion.css --allow-local-files --images png my-presentation.md
 
 # PowerPoint
-marp --allow-local-files --pptx my-presentation.md
+marp --theme marp-theme-digion.css --allow-local-files --pptx my-presentation.md
 ```
 
 ## 5. スライドクラスの使い方
