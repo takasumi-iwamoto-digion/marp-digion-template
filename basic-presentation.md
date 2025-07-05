@@ -3,6 +3,7 @@ marp: true
 theme: digion
 transition: fade
 paginate: true
+html: true
 ---
 
 <!-- _class: title -->
@@ -27,6 +28,48 @@ paginate: true
 - **統一されたデザイン**: DigiOnブランドカラーとフォントで一貫性のある見た目
 - **簡単な使い方**: `theme: digion` を指定するだけですぐに利用可能
 - **柔軟なカスタマイズ**: コードブロック、テーブル、グラフなど様々なコンテンツに対応
+
+---
+
+## 本日のアジェンダ
+
+<div class="columns">
+<div>
+
+### 1. データビジュアライゼーション
+- 月間アクティブユーザー数推移
+- 売上構成比の変化
+- 四半期業績サマリー
+- ユーザー満足度調査
+- 市場シェア分析
+
+</div>
+<div>
+
+### 2. 基本レイアウト
+- 通常スライド
+- 画像配置レイアウト
+
+### 3. コンテンツ表示機能
+- フラグメント機能
+- コードブロック
+- テーブル
+
+### 4. 高度なレイアウト
+- カラムレイアウト各種
+
+### 5. フレームワーク統合
+- Bootstrap活用例
+
+</div>
+</div>
+
+---
+
+<!-- _class: headline -->
+<!-- _paginate: false -->
+
+## データビジュアライゼーション
 
 ---
 
@@ -162,6 +205,13 @@ paginate: true
 
 ---
 
+<!-- _class: headline -->
+<!-- _paginate: false -->
+
+## 基本レイアウト
+
+---
+
 ## 通常のスライド（default）
 
 これは通常のスライドレイアウトです。`target/DigiOn-Template-default.png`のデザインを再現しています。
@@ -169,13 +219,6 @@ paginate: true
 - 赤いアクセントカラーの見出し
 - 標準的な箇条書きスタイル
 - ページ番号の表示
-
----
-
-<!-- _class: headline -->
-<!-- _paginate: false -->
-
-## 大見出し
 
 ---
 
@@ -205,6 +248,13 @@ paginate: true
 - 製品の紹介
 - 技術の説明
 - ビジュアル重視のコンテンツ
+
+---
+
+<!-- _class: headline -->
+<!-- _paginate: false -->
+
+## コンテンツ表示機能
 
 ---
 
@@ -242,6 +292,13 @@ digion.initialize().then(() => {
 | DigiOn Video | Windows/Mac/Linux | 動画再生・編集 |
 | DigiOn Audio | iOS/Android | 音声処理・変換 |
 | DigiOn Stream | Web | ストリーミング配信 |
+
+---
+
+<!-- _class: headline -->
+<!-- _paginate: false -->
+
+## 高度なレイアウト
 
 ---
 
@@ -317,6 +374,136 @@ digion.initialize().then(() => {
 - **互換性**: 既存システムとの完全互換を維持
 
 </div>
+</div>
+
+---
+
+<!-- _class: headline -->
+<!-- _paginate: false -->
+
+## フレームワーク統合
+
+---
+
+## Bootstrap統合デモ
+
+<div class="container-fluid p-0">
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="alert alert-success" role="alert">
+        <h6 class="alert-heading mb-1">✓ 成功</h6>
+        <small>目標達成率 150%</small>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="alert alert-info" role="alert">
+        <h6 class="alert-heading mb-1">📊 情報</h6>
+        <small>新機能リリース</small>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="alert alert-warning" role="alert">
+        <h6 class="alert-heading mb-1">⚠️ 注意</h6>
+        <small>メンテナンス予定</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+### ステータス表示
+
+<div class="mt-3">
+  <span class="badge bg-danger me-2">重要</span>
+  <span class="badge bg-success me-2">完了</span>
+  <span class="badge bg-primary me-2">進行中</span>
+  <span class="badge bg-secondary">保留</span>
+</div>
+
+---
+
+## Bootstrapテーブル
+
+<table class="table table-striped table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th>プロジェクト</th>
+      <th>進捗</th>
+      <th>期限</th>
+      <th>ステータス</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>新機能開発</td>
+      <td>
+        <div class="progress" style="height: 20px;">
+          <div class="progress-bar bg-success" style="width: 75%">75%</div>
+        </div>
+      </td>
+      <td>2025/02/28</td>
+      <td><span class="badge bg-success">進行中</span></td>
+    </tr>
+    <tr>
+      <td>バグ修正</td>
+      <td>
+        <div class="progress" style="height: 20px;">
+          <div class="progress-bar bg-info" style="width: 90%">90%</div>
+        </div>
+      </td>
+      <td>2025/01/31</td>
+      <td><span class="badge bg-primary">レビュー中</span></td>
+    </tr>
+    <tr>
+      <td>ドキュメント作成</td>
+      <td>
+        <div class="progress" style="height: 20px;">
+          <div class="progress-bar bg-warning" style="width: 50%">50%</div>
+        </div>
+      </td>
+      <td>2025/03/15</td>
+      <td><span class="badge bg-warning text-dark">作業中</span></td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Bootstrapカード＆リスト
+
+<div class="row g-3">
+  <div class="col-md-6">
+    <div class="card border-danger">
+      <div class="card-header bg-danger text-white">
+        <h5 class="mb-0">重要タスク</h5>
+      </div>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            セキュリティ更新
+            <span class="badge bg-danger rounded-pill">3</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            パフォーマンス改善
+            <span class="badge bg-warning rounded-pill">5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            バグ修正
+            <span class="badge bg-info rounded-pill">12</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">プロジェクト概要</h5>
+        <p class="card-text">Bootstrap統合により、より洗練されたUIコンポーネントを簡単に実装できます。</p>
+        <button class="btn btn-danger">詳細を見る</button>
+        <button class="btn btn-outline-secondary">キャンセル</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 ---
