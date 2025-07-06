@@ -522,6 +522,7 @@ digion.initialize().then(() => {
   </div>
 </div>
 
+---
 
 <!-- _class: end -->
 <!-- _paginate: false -->
