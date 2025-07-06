@@ -31,9 +31,7 @@ VS Codeの設定に以下を追加：
 
 ```json
 {
-  "markdown.marp.themes": [
-    "./theme/marp-theme-digion.css"
-  ],
+  "markdown.marp.themes": ["./theme/marp-theme-digion.css"],
   "markdown.marp.enableHtml": true
 }
 ```
@@ -41,10 +39,12 @@ VS Codeの設定に以下を追加：
 ## 3. プレビュー方法
 
 ### VS Code
+
 1. ファイルを開く
 2. `Ctrl+K V` (Mac: `Cmd+K V`)
 
 ### Marp CLI
+
 ```bash
 marp -s my-presentation.md
 ```
@@ -68,6 +68,7 @@ marp --allow-local-files --pptx my-presentation.md
 ## 5. スライドクラスの使い方
 
 ### 通常スライド（デフォルト）
+
 ```markdown
 ---
 
@@ -79,6 +80,7 @@ marp --allow-local-files --pptx my-presentation.md
 ```
 
 ### 見出しスライド
+
 ```markdown
 ---
 
@@ -89,16 +91,19 @@ marp --allow-local-files --pptx my-presentation.md
 ```
 
 ### 画像レイアウト
+
 ```markdown
 ---
 
 ![bg left:40%](./assets/bg-headline.jpg)
 
 ## 左画像レイアウト
+
 内容
 ```
 
 ### 最終スライド
+
 ```markdown
 ---
 
@@ -115,6 +120,7 @@ marp --allow-local-files --pptx my-presentation.md
 ```
 
 ### カラムレイアウト
+
 ```markdown
 ---
 
@@ -124,6 +130,7 @@ marp --allow-local-files --pptx my-presentation.md
 <div>
 
 ### 左側
+
 - 内容1
 - 内容2
 
@@ -131,6 +138,7 @@ marp --allow-local-files --pptx my-presentation.md
 <div>
 
 ### 右側
+
 - 内容A
 - 内容B
 
@@ -139,6 +147,7 @@ marp --allow-local-files --pptx my-presentation.md
 ```
 
 利用可能なレイアウト：
+
 - `columns` - 2カラム均等分割
 - `columns-3` - 3カラム均等分割
 - `columns-40-60` - 40:60の非対称分割

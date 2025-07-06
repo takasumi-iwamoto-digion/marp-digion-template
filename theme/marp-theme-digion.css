@@ -129,7 +129,7 @@ h2 {
   font-size: 63px; /* HD: 42px * 1.5 */
   color: #333333;
   position: absolute;
-  border-left: 7.5px solid #E60012; /* HD: 5px * 1.5 */
+  border-left: 7.5px solid #e60012; /* HD: 5px * 1.5 */
   padding-left: 30px; /* HD: 20px * 1.5 */
   left: 75px; /* HD: 50px * 1.5 */
   top: 75px; /* HD: 50px * 1.5 */
@@ -143,7 +143,7 @@ ul {
 }
 
 ul li::marker {
-  color: #E60012;
+  color: #e60012;
 }
 
 /* 最終スライドのスタイル */

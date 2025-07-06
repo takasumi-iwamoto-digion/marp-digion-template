@@ -3,18 +3,13 @@
     "time": {
       "type": "stdio",
       "command": "uvx",
-      "args": [
-        "mcp-server-time",
-        "--local-timezone=Asia/Tokyo"
-      ],
+      "args": ["mcp-server-time", "--local-timezone=Asia/Tokyo"],
       "env": {}
     },
     "context7": {
       "type": "stdio",
       "command": "npx",
-      "args": [
-        "@upstash/context7-mcp"
-      ],
+      "args": ["@upstash/context7-mcp"],
       "env": {}
     }
   }

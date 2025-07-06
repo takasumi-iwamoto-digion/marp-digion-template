@@ -1,6 +1,4 @@
 {
-  "markdown.marp.themes": [
-    "./theme/marp-theme-digion.css"
-  ],
+  "markdown.marp.themes": ["./theme/marp-theme-digion.css"],
   "markdown.marp.html": "all"
 }

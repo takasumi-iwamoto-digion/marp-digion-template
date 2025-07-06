@@ -51,7 +51,13 @@ QuickChart.ioは、URLパラメータでChart.jsの設定を渡すことで、�
 ### 凡例の非表示
 
 ```javascript
-options:{plugins:{legend:{display:false}}}
+options: {
+  plugins: {
+    legend: {
+      display: false
+    }
+  }
+}
 ```
 
 ### Y軸の最小値設定
@@ -93,9 +99,9 @@ Marpでは画像のサイズを以下のように調整できます：
 ### 複数データセット
 
 ```javascript
-datasets:[
-  {label:'当社',data:[10,20,30],borderColor:'%23E60012'},
-  {label:'競合A',data:[15,18,22],borderColor:'%23666666'}
+datasets: [
+  { label: '当社', data: [10, 20, 30], borderColor: '%23E60012' },
+  { label: '競合A', data: [15, 18, 22], borderColor: '%23666666' },
 ]
 ```
 

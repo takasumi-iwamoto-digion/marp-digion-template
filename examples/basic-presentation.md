@@ -9,8 +9,8 @@ html: true
 <!-- _class: title -->
 <!-- _paginate: false -->
 
-
 # DigiOn プレゼンテーション
+
 基本から高度なレイアウトまで対応したMarpテンプレート
 
 <div class="date">2025年1月15日</div>
@@ -37,6 +37,7 @@ html: true
 <div>
 
 ### 1. データビジュアライゼーション
+
 - 月間アクティブユーザー数推移
 - 売上構成比の変化
 - 四半期業績サマリー
@@ -47,18 +48,22 @@ html: true
 <div>
 
 ### 2. 基本レイアウト
+
 - 通常スライド
 - 画像配置レイアウト
 
 ### 3. コンテンツ表示機能
+
 - フラグメント機能
 - コードブロック
 - テーブル
 
 ### 4. 高度なレイアウト
+
 - カラムレイアウト各種
 
 ### 5. フレームワーク統合
+
 - Bootstrap活用例
 
 ### 6. 図表作成
@@ -89,7 +94,7 @@ html: true
 </div>
 <div>
 
-![width:600px](https://quickchart.io/chart?h=500px&c={type:'bar',data:{labels:['7月','8月','9月','10月','11月','12月'],datasets:[{label:'アクティブユーザー数（万人）',data:[45,52,58,65,72,83],backgroundColor:'%23E60012',borderColor:'%23E60012',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,scales:{y:{beginAtZero:true,grid:{color:'rgba(0,0,0,0.1)'}},x:{grid:{display:false}}},plugins:{legend:{display:false}}}})
+![width:600px](<https://quickchart.io/chart?h=500px&c={type:'bar',data:{labels:['7月','8月','9月','10月','11月','12月'],datasets:[{label:'アクティブユーザー数（万人）',data:[45,52,58,65,72,83],backgroundColor:'%23E60012',borderColor:'%23E60012',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,scales:{y:{beginAtZero:true,grid:{color:'rgba(0,0,0,0.1)'}},x:{grid:{display:false}}},plugins:{legend:{display:false}}}}>)
 
 </div>
 </div>
@@ -138,7 +143,8 @@ html: true
 <div style="text-align: center;">
 
 ### 売上高（億円）
-![width:500px](https://quickchart.io/chart?w=350&h=250&c={type:'line',data:{labels:['Q1','Q2','Q3','Q4'],datasets:[{label:'売上高',data:[320,350,385,410],borderColor:'%23E60012',backgroundColor:'rgba(230,0,18,0.1)',fill:true,tension:0.3}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:false,min:300}}}})
+
+![width:500px](<https://quickchart.io/chart?w=350&h=250&c={type:'line',data:{labels:['Q1','Q2','Q3','Q4'],datasets:[{label:'売上高',data:[320,350,385,410],borderColor:'%23E60012',backgroundColor:'rgba(230,0,18,0.1)',fill:true,tension:0.3}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:false,min:300}}}}>)
 
 前年同期比 **+23%**
 
@@ -146,7 +152,8 @@ html: true
 <div style="text-align: center;">
 
 ### 営業利益（億円）
-![width:500px](https://quickchart.io/chart?w=350&h=250&c={type:'line',data:{labels:['Q1','Q2','Q3','Q4'],datasets:[{label:'営業利益',data:[45,52,61,72],borderColor:'%23E60012',backgroundColor:'rgba(230,0,18,0.1)',fill:true,tension:0.3}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:false,min:40}}}})
+
+![width:500px](<https://quickchart.io/chart?w=350&h=250&c={type:'line',data:{labels:['Q1','Q2','Q3','Q4'],datasets:[{label:'営業利益',data:[45,52,61,72],borderColor:'%23E60012',backgroundColor:'rgba(230,0,18,0.1)',fill:true,tension:0.3}]},options:{plugins:{legend:{display:false}},scales:{y:{beginAtZero:false,min:40}}}}>)
 
 前年同期比 **+35%**
 
@@ -166,6 +173,7 @@ html: true
 <div style="background-color: #f8f8f8; padding: 20px; border-radius: 8px;">
 
 ### 主な改善ポイント
+
 - レスポンスタイムの改善
 - 新機能のチュートリアル充実
 - カスタマーサポート体制強化
@@ -248,6 +256,7 @@ html: true
 `target/DigiOn-Template-half-right.png`のデザインを実現しています。
 
 ### 使用例
+
 - 製品の紹介
 - 技術の説明
 - ビジュアル重視のコンテンツ
@@ -265,10 +274,10 @@ html: true
 
 順番に表示される箇条書き：
 
-* DigiOnの強み
-* 高度な映像・音声処理技術
-* クロスプラットフォーム対応
-* 豊富な実績と信頼
+- DigiOnの強み
+- 高度な映像・音声処理技術
+- クロスプラットフォーム対応
+- 豊富な実績と信頼
 
 ---
 
@@ -278,23 +287,23 @@ html: true
 // DigiOn SDK の使用例
 const digion = new DigiOnSDK({
   apiKey: 'your-api-key',
-  platform: 'web'
-});
+  platform: 'web',
+})
 
 digion.initialize().then(() => {
-  console.log('DigiOn SDK initialized');
-});
+  console.log('DigiOn SDK initialized')
+})
 ```
 
 ---
 
 ## テーブルレイアウト
 
-| 製品名 | 対応OS | 主な機能 |
-|--------|--------|----------|
-| DigiOn Video | Windows/Mac/Linux | 動画再生・編集 |
-| DigiOn Audio | iOS/Android | 音声処理・変換 |
-| DigiOn Stream | Web | ストリーミング配信 |
+| 製品名        | 対応OS            | 主な機能           |
+| ------------- | ----------------- | ------------------ |
+| DigiOn Video  | Windows/Mac/Linux | 動画再生・編集     |
+| DigiOn Audio  | iOS/Android       | 音声処理・変換     |
+| DigiOn Stream | Web               | ストリーミング配信 |
 
 ---
 
@@ -311,6 +320,7 @@ digion.initialize().then(() => {
 <div>
 
 ### 左カラム
+
 - Grid方式による2分割
 - レスポンシブ対応
 - 均等幅での表示
@@ -319,6 +329,7 @@ digion.initialize().then(() => {
 <div>
 
 ### 右カラム
+
 - 画像やコードも配置可能
 - 見やすいレイアウト
 - コンテンツの整理に最適
@@ -334,6 +345,7 @@ digion.initialize().then(() => {
 <div>
 
 ### 製品A
+
 - 高速処理
 - 安定性重視
 - 24時間稼働
@@ -342,6 +354,7 @@ digion.initialize().then(() => {
 <div>
 
 ### 製品B
+
 - 使いやすさ
 - 多機能
 - カスタマイズ可能
@@ -350,6 +363,7 @@ digion.initialize().then(() => {
 <div>
 
 ### 製品C
+
 - コストパフォーマンス
 - 軽量設計
 - モバイル対応
@@ -365,12 +379,14 @@ digion.initialize().then(() => {
 <div>
 
 ### 概要
+
 当社の最新技術により、従来比3倍の処理速度を実現
 
 </div>
 <div>
 
 ### 詳細説明
+
 - **処理速度**: 新アルゴリズムによる並列処理の最適化
 - **メモリ効率**: スマートキャッシュシステムの導入
 - **省電力**: AI駆動の電力管理システム
@@ -709,7 +725,6 @@ pie title 開発工数配分
 </div>
 
 ---
-
 
 <!-- _class: end -->
 <!-- _paginate: false -->

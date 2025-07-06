@@ -15,7 +15,6 @@ DigiOn向けのMarpプレゼンテーション用カスタムテーマです。
 marp: true
 theme: digion
 ---
-
 # プレゼンテーションタイトル
 ```
 
@@ -86,9 +85,7 @@ VS Codeの設定（`Ctrl+,` または `Cmd+,`）を開き、以下を追加：
 
 ```json
 {
-  "markdown.marp.themes": [
-    "./theme/marp-theme-digion.css"
-  ],
+  "markdown.marp.themes": ["./theme/marp-theme-digion.css"],
   "markdown.marp.enableHtml": true
 }
 ```
@@ -123,6 +120,7 @@ style: |
 <!-- _paginate: false -->
 
 # プレゼンテーションタイトル
+
 サブタイトル
 
 <div class="date">2025年1月15日</div>
@@ -153,18 +151,22 @@ style: |
 #### 画像レイアウト
 
 左側に画像：
+
 ```markdown
 ![bg left:40%](./assets/bg-headline.jpg)
 
 ## タイトル
+
 内容
 ```
 
 右側に画像：
+
 ```markdown
 ![bg right:40%](./assets/bg-headline.jpg)
 
 ## タイトル
+
 内容
 ```
 
@@ -193,8 +195,8 @@ style: |
 ```javascript
 const digion = new DigiOnSDK({
   apiKey: 'your-api-key',
-  platform: 'web'
-});
+  platform: 'web',
+})
 ```
 ````
 
@@ -203,10 +205,10 @@ const digion = new DigiOnSDK({
 通常のMarkdownテーブルが装飾付きで表示されます：
 
 ```markdown
-| 製品名 | 対応OS | 主な機能 |
-|--------|--------|----------|
+| 製品名       | 対応OS            | 主な機能       |
+| ------------ | ----------------- | -------------- |
 | DigiOn Video | Windows/Mac/Linux | 動画再生・編集 |
-| DigiOn Audio | iOS/Android | 音声処理・変換 |
+| DigiOn Audio | iOS/Android       | 音声処理・変換 |
 ```
 
 #### カラムレイアウト
@@ -214,11 +216,13 @@ const digion = new DigiOnSDK({
 コンテンツを複数列に分割して表示できます：
 
 2カラム（均等分割）：
+
 ```markdown
 <div class="columns">
 <div>
 
 ### 左側のコンテンツ
+
 - 項目1
 - 項目2
 
@@ -226,6 +230,7 @@ const digion = new DigiOnSDK({
 <div>
 
 ### 右側のコンテンツ
+
 - 項目A
 - 項目B
 
@@ -234,23 +239,27 @@ const digion = new DigiOnSDK({
 ```
 
 3カラム：
+
 ```markdown
 <div class="columns-3">
 <div>
 
 ### 第1カラム
+
 内容1
 
 </div>
 <div>
 
 ### 第2カラム
+
 内容2
 
 </div>
 <div>
 
 ### 第3カラム
+
 内容3
 
 </div>
@@ -258,6 +267,7 @@ const digion = new DigiOnSDK({
 ```
 
 非対称レイアウト（40:60）：
+
 ```markdown
 <div class="columns-40-60">
 <div>狭い方（40%）</div>
@@ -266,6 +276,7 @@ const digion = new DigiOnSDK({
 ```
 
 利用可能なクラス：
+
 - `columns` - 2カラム均等分割
 - `columns-3` - 3カラム均等分割
 - `columns-40-60` - 40:60の非対称分割
@@ -303,16 +314,19 @@ html: true
 ### 統合例
 
 #### アラートとバッジ
+
 ![Bootstrap統合デモ - アラートとバッジ](examples/basic-presentation.023.png)
 
 Bootstrapのアラートコンポーネントとバッジを使用した情報表示の例です。
 
 #### テーブルスタイル
+
 ![Bootstrap統合デモ - テーブル](examples/basic-presentation.024.png)
 
 Bootstrapのテーブルクラスを使用した、美しいデータ表示の例です。
 
 #### カードコンポーネント
+
 ![Bootstrap統合デモ - カード](examples/basic-presentation.025.png)
 
 Bootstrapのカードコンポーネントを使用したコンテンツのグループ化の例です。
@@ -372,24 +386,31 @@ flowchart TD
 `basic-presentation.md`から生成されたスライドの例：
 
 ### タイトルスライド
+
 ![タイトルスライド](examples/basic-presentation.001.png)
 
 ### 通常スライド（特徴説明）
+
 ![通常スライド](examples/basic-presentation.002.png)
 
 ### 見出しスライド（headline）
+
 ![見出しスライド](examples/basic-presentation.010.png)
 
 ### 画像レイアウト（左側）
+
 ![左画像レイアウト](examples/basic-presentation.012.png)
 
 ### コードブロック
+
 ![コードブロック](examples/basic-presentation.016.png)
 
 ### テーブル
+
 ![テーブル](examples/basic-presentation.017.png)
 
 ### 最終スライド
+
 ![最終スライド](examples/basic-presentation.026.png)
 
 ## デザイン目標
@@ -417,13 +438,15 @@ CSSファイルを編集することで、以下の要素をカスタマイズ�
 ## 注意事項
 
 - **Marp CLIを使用する場合、`.marprc.yml`にテーマが設定されているため、特別なオプションは不要です**
+
   ```bash
   # プレビュー
   marp -s basic-presentation.md
-  
+
   # PDF出力
   marp --pdf basic-presentation.md
   ```
+
 - **画像を含むPDF/PNG出力時は `--allow-local-files` オプションが必要です**
   ```bash
   marp --allow-local-files --pdf basic-presentation.md

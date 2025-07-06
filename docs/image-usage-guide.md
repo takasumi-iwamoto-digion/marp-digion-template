@@ -3,9 +3,11 @@
 ## 画像が表示されない場合の対処法
 
 ### 問題
+
 Marp CLIでPDF/PNG出力時に、CSSで指定した背景画像（ロゴなど）が表示されない。
 
 ### 原因
+
 セキュリティ上の理由により、デフォルトではローカルファイルへのアクセスが制限されています。
 
 ### 解決方法
@@ -50,11 +52,13 @@ GitHub版（`basic-presentation-github.md`）では、画像URLがGitHub経由�
 ### 画像パスの確認
 
 CSSファイル内の画像パス：
+
 ```css
 background-image: url('../assets/logo.png');
 ```
 
 画像ファイルの配置：
+
 ```
 marp-digion-template/
 ├── theme/

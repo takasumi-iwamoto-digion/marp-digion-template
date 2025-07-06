@@ -16,6 +16,7 @@ style: |
 <!-- _paginate: false -->
 
 # Bootstrap統合デモ
+
 定番CSSフレームワークでプロフェッショナルなレイアウト
 
 <div class="date">2025年1月15日</div>

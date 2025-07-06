@@ -16,6 +16,7 @@ tailwind.config = {
 <!-- _paginate: false -->
 
 # Tailwind CSS統合デモ
+
 CSSフレームワークでより柔軟なレイアウトを実現
 
 <div class="date">2025年1月15日</div>

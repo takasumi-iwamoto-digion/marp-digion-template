@@ -1,0 +1,41 @@
+{
+  "name": "marp-digion-template",
+  "version": "1.0.0",
+  "description": "DigiOn向けのMarpプレゼンテーション用カスタムテーマです。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:md": "markdownlint-cli2 \"**/*.md\"",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint": "npm run lint:md && npm run lint:css",
+    "format:md": "prettier --write \"**/*.md\"",
+    "format:css": "prettier --write \"**/*.css\"",
+    "format": "prettier --write .",
+    "check:md": "prettier --check \"**/*.md\"",
+    "check:css": "prettier --check \"**/*.css\"",
+    "check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takasumi-iwamoto-digion/marp-digion-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/takasumi-iwamoto-digion/marp-digion-template/issues"
+  },
+  "homepage": "https://github.com/takasumi-iwamoto-digion/marp-digion-template#readme",
+  "devDependencies": {
+    "markdownlint-cli2": "^0.18.1",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.21.1",
+    "stylelint-config-recess-order": "^7.1.0",
+    "stylelint-config-standard": "^38.0.0"
+  }
+}
