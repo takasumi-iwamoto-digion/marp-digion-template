@@ -61,6 +61,9 @@ html: true
 ### 5. フレームワーク統合
 - Bootstrap活用例
 
+### 6. 図表作成
+- Mermaid図表
+
 </div>
 </div>
 
@@ -504,6 +507,205 @@ digion.initialize().then(() => {
       </div>
     </div>
   </div>
+</div>
+
+---
+
+<!-- _class: headline -->
+<!-- _paginate: false -->
+
+## 図表作成
+
+---
+
+## Mermaidフローチャート
+
+<div class="columns">
+<div>
+
+### プロジェクトフロー
+```mermaid
+flowchart TD
+    A["要件定義"] --> B["設計"]
+    B --> C["実装"]
+    C --> D["テスト"]
+    D --> E{"品質確認"}
+    E -->|OK| F["リリース"]
+    E -->|NG| C
+    F --> G["運用保守"]
+```
+
+</div>
+<div>
+
+### 意思決定プロセス
+```mermaid
+flowchart LR
+    Start["開始"] --> Input["データ入力"]
+    Input --> Process["処理"]
+    Process --> Decision{"判定"}
+    Decision -->|Yes| Output1["承認"]
+    Decision -->|No| Output2["却下"]
+    Output1 --> End["終了"]
+    Output2 --> End
+```
+
+</div>
+</div>
+
+---
+
+## Mermaidシーケンス図
+
+### システム連携フロー
+
+```mermaid
+sequenceDiagram
+    participant U as ユーザー
+    participant F as フロントエンド
+    participant B as バックエンド
+    participant D as データベース
+    
+    U->>F: ログインリクエスト
+    F->>B: 認証要求
+    B->>D: ユーザー情報照会
+    D-->>B: ユーザー情報
+    B-->>F: 認証結果
+    F-->>U: ログイン完了
+    
+    Note over U,D: 認証プロセス完了
+```
+
+---
+
+## Mermaidガントチャート
+
+### プロジェクトスケジュール
+
+```mermaid
+gantt
+    title プロジェクト管理スケジュール
+    dateFormat  YYYY-MM-DD
+    section フェーズ1
+    要件定義           :done,    des1, 2024-01-01, 2024-01-15
+    設計               :done,    des2, 2024-01-16, 2024-02-01
+    section フェーズ2
+    実装               :active,  dev1, 2024-02-02, 2024-03-15
+    単体テスト         :         test1, 2024-03-01, 2024-03-20
+    section フェーズ3
+    結合テスト         :         test2, 2024-03-21, 2024-04-05
+    リリース準備       :         rel1, 2024-04-06, 2024-04-15
+```
+
+---
+
+## Mermaidクラス図
+
+<div class="columns">
+<div>
+
+### システム構成
+```mermaid
+classDiagram
+    class User {
+        +String name
+        +String email
+        +login()
+        +logout()
+    }
+    class Order {
+        +int orderId
+        +Date orderDate
+        +calculateTotal()
+    }
+    class Product {
+        +String productName
+        +float price
+        +getDetails()
+    }
+    
+    User "1" --> "*" Order
+    Order "*" --> "*" Product
+```
+
+</div>
+<div>
+
+### 継承関係
+```mermaid
+classDiagram
+    class Animal {
+        <<abstract>>
+        +String name
+        +move()
+    }
+    class Dog {
+        +bark()
+    }
+    class Cat {
+        +meow()
+    }
+    class Bird {
+        +fly()
+    }
+    
+    Animal <|-- Dog
+    Animal <|-- Cat
+    Animal <|-- Bird
+```
+
+</div>
+</div>
+
+---
+
+## Mermaid状態遷移図
+
+### 注文処理ステータス
+
+```mermaid
+stateDiagram-v2
+    [*] --> 新規注文
+    新規注文 --> 確認中: 注文受付
+    確認中 --> 処理中: 在庫確認OK
+    確認中 --> キャンセル: 在庫なし
+    処理中 --> 発送準備: 決済完了
+    処理中 --> キャンセル: 決済失敗
+    発送準備 --> 発送済み: 出荷処理
+    発送済み --> 配達完了: 配達確認
+    配達完了 --> [*]
+    キャンセル --> [*]
+```
+
+---
+
+## Mermaid円グラフ
+
+<div class="columns">
+<div>
+
+### 市場シェア分析
+```mermaid
+pie title 製品別売上構成比
+    "製品A" : 45
+    "製品B" : 30
+    "製品C" : 15
+    "その他" : 10
+```
+
+</div>
+<div>
+
+### リソース配分
+```mermaid
+pie title 開発工数配分
+    "フロントエンド" : 35
+    "バックエンド" : 40
+    "インフラ" : 15
+    "テスト" : 10
+```
+
+</div>
 </div>
 
 ---
