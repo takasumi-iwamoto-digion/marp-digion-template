@@ -524,64 +524,6 @@ digion.initialize().then(() => {
 
 ---
 
-## Bootstrapフォームコンポーネント
-
-<div class="container-fluid">
-  <div class="row g-3">
-    <div class="col-md-6">
-      <h5>ユーザー登録フォーム</h5>
-      <form>
-        <div class="mb-3">
-          <label class="form-label">メールアドレス</label>
-          <input type="email" class="form-control" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-          <label class="form-label">パスワード</label>
-          <input type="password" class="form-control">
-        </div>
-        <div class="mb-3">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="agreeCheck">
-            <label class="form-check-label" for="agreeCheck">
-              利用規約に同意する
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-danger">登録</button>
-      </form>
-    </div>
-    <div class="col-md-6">
-      <h5>サービス選択</h5>
-      <div class="mb-3">
-        <label class="form-label">プラン選択</label>
-        <select class="form-select">
-          <option selected>プランを選択してください</option>
-          <option value="1">ベーシックプラン</option>
-          <option value="2">プロフェッショナルプラン</option>
-          <option value="3">エンタープライズプラン</option>
-        </select>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">オプション機能</label>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="option1">
-          <label class="form-check-label" for="option1">
-            クラウドストレージ拡張
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="option2">
-          <label class="form-check-label" for="option2">
-            優先サポート
-          </label>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
----
-
 ## Bootstrapナビゲーション
 
 ### タブ切り替え
@@ -626,49 +568,6 @@ digion.initialize().then(() => {
     </li>
   </ul>
 </nav>
-
----
-
-## Bootstrapアコーディオン
-
-<div class="accordion" id="faqAccordion">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-        Q1: DigiOn SDKの主な特徴は何ですか？
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        <strong>高速処理と高品質</strong>：独自のアルゴリズムにより、業界最速クラスの処理速度を実現しながら、高品質な出力を保証します。
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-        Q2: どのようなプラットフォームに対応していますか？
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        Windows、Mac、Linux、iOS、Android、Webなど、主要なプラットフォームすべてに対応しています。
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-        Q3: 技術サポートは受けられますか？
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-      <div class="accordion-body">
-        24時間365日の技術サポートを提供しています。専門のエンジニアが迅速に対応いたします。
-      </div>
-    </div>
-  </div>
-</div>
 
 ---
 
@@ -737,15 +636,6 @@ digion.initialize().then(() => {
   <div class="progress" style="height: 25px;">
     <div class="progress-bar bg-danger" style="width: 92%">92%</div>
   </div>
-</div>
-
-### ローディング表示
-
-<div class="text-center mt-4">
-  <div class="spinner-border text-danger" role="status">
-    <span class="visually-hidden">Loading...</span>
-  </div>
-  <p class="mt-2">データを読み込んでいます...</p>
 </div>
 
 ---
@@ -849,86 +739,6 @@ digion.initialize().then(() => {
         <span class="badge bg-danger rounded-pill">重要</span>
       </li>
     </ul>
-  </div>
-</div>
-
----
-
-## Bootstrapインプットグループ
-
-<div class="container">
-  <h5>検索とフィルター</h5>
-  <div class="input-group mb-3">
-    <span class="input-group-text">🔍</span>
-    <input type="text" class="form-control" placeholder="キーワードを入力">
-    <button class="btn btn-danger" type="button">検索</button>
-  </div>
-  
-  <h5>価格設定</h5>
-  <div class="input-group mb-3">
-    <span class="input-group-text">¥</span>
-    <input type="text" class="form-control" placeholder="最小価格">
-    <span class="input-group-text">〜</span>
-    <input type="text" class="form-control" placeholder="最大価格">
-    <button class="btn btn-outline-secondary" type="button">適用</button>
-  </div>
-  
-  <h5>ファイルアップロード</h5>
-  <div class="input-group mb-3">
-    <input type="file" class="form-control" id="inputGroupFile">
-    <label class="input-group-text" for="inputGroupFile">アップロード</label>
-  </div>
-  
-  <h5>URL短縮</h5>
-  <div class="input-group">
-    <span class="input-group-text">https://</span>
-    <input type="text" class="form-control" placeholder="example.com/very/long/url">
-    <button class="btn btn-success" type="button">短縮URL生成</button>
-  </div>
-</div>
-
----
-
-## Bootstrapトースト通知
-
-<div class="position-relative">
-  <div class="toast-container position-absolute top-0 end-0 p-3">
-    <div class="toast show" role="alert">
-      <div class="toast-header">
-        <strong class="me-auto">✅ 成功</strong>
-        <small>たった今</small>
-        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-      </div>
-      <div class="toast-body">
-        ファイルのアップロードが完了しました。
-      </div>
-    </div>
-    
-    <div class="toast show mt-2" role="alert">
-      <div class="toast-header">
-        <strong class="me-auto text-warning">⚠️ 警告</strong>
-        <small>5分前</small>
-        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-      </div>
-      <div class="toast-body">
-        ディスク容量が残り10%未満です。
-      </div>
-    </div>
-    
-    <div class="toast show mt-2" role="alert">
-      <div class="toast-header">
-        <strong class="me-auto text-info">ℹ️ 情報</strong>
-        <small>1時間前</small>
-        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-      </div>
-      <div class="toast-body">
-        新しいアップデートが利用可能です。
-      </div>
-    </div>
-  </div>
-  
-  <div style="height: 250px;">
-    <!-- スペース確保 -->
   </div>
 </div>
 
