@@ -153,20 +153,6 @@ marp --allow-local-files --pptx my-presentation.md
 - `columns-40-60` - 40:60の非対称分割
 - `columns-60-40` - 60:40の非対称分割
 
-### Mermaid図表
-```markdown
----
-
-## フローチャート
-
-```mermaid
-flowchart LR
-    A[開始] --> B[処理]
-    B --> C{判定}
-    C -->|Yes| D[完了]
-    C -->|No| B
-```
-
 ## それだけです！
 
 GitHub経由でテーマを読み込んで、すぐに使い始められます。
